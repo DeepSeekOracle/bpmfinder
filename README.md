@@ -1,23 +1,24 @@
-# bpmfinder.ca deploy root
+# bpmfinder.ca
 
-Full site package for **https://bpmfinder.ca/** (AdSense + Search Console).
+Free BPM Finder
+
+AdSense publisher: `ca-pub-0646320966060599`
 
 ## Files
+- `index.html` — homepage
+- `ads.txt` — Google ads.txt
+- `privacy.html` — privacy policy
+- `CNAME` — GitHub Pages custom domain
+- `robots.txt` / `sitemap.xml`
 
-| File | Role |
-|------|------|
-| `index.html` | Free BPM Finder app (homepage) |
-| `privacy.html` | Privacy policy (AdSense expects this) |
-| `ads.txt` | `pub-0646320966060599` |
-| `robots.txt` / `sitemap.xml` | Crawl |
-| `CNAME` | GitHub Pages custom domain |
+## GoDaddy DNS (replace parking)
 
-## Fix AdSense “Site down or unavailable”
+| Type | Name | Value |
+|------|------|--------|
+| A | @ | 185.199.108.153 |
+| A | @ | 185.199.109.153 |
+| A | @ | 185.199.110.153 |
+| A | @ | 185.199.111.153 |
+| CNAME | www | deepseekoracle.github.io |
 
-1. Point DNS at a host that actually serves these files (not GoDaddy “coming soon”).
-2. Recommended: GitHub Pages repo with this folder as site root (see `docs/ADSENSE_BPMFINDER_FIX.md`).
-3. Confirm **https://bpmfinder.ca/** returns HTTP 200 with real HTML.
-4. Confirm **https://bpmfinder.ca/ads.txt** is plain text with your pub id.
-5. Only then click **I confirm I have fixed the issues** in AdSense.
-
-Do **not** request review while the domain times out or parks.
+Repo: DeepSeekOracle/bpmfinder · Pages: main / (root) · Custom domain: bpmfinder.ca
