@@ -725,6 +725,36 @@
     text-decoration: none;
   }
   .lygo-rumble-link a:hover { color: var(--amber); text-decoration: underline; }
+  .lygo-rumble-cta-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 12px;
+  }
+  .lygo-rumble-cta {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.82rem;
+    text-decoration: none !important;
+    border: 1px solid transparent;
+  }
+  .lygo-rumble-cta.primary {
+    background: linear-gradient(135deg, #85c742, #b8e986);
+    color: #0a1206 !important;
+    box-shadow: 0 4px 16px rgba(133, 199, 66, 0.3);
+  }
+  .lygo-rumble-cta.secondary {
+    background: rgba(62, 168, 160, 0.12);
+    border-color: rgba(62, 168, 160, 0.4);
+    color: var(--teal) !important;
+  }
+  .lygo-rumble-cta:hover { filter: brightness(1.08); }
 
   .lygo-ad-slot {
     text-align: center;
@@ -812,8 +842,12 @@
       referrerpolicy="strict-origin-when-cross-origin"></iframe>
   </div>
   <p class="lygo-rumble-meta" id="rumbleLiveMeta">Loading live status…</p>
-  <p class="lygo-rumble-link">
-    <a id="rumbleLiveLink" href="https://rumble.com/Excavationpro/live?mref=1th29y&amp;mc=2p3fp" target="_blank" rel="noopener noreferrer">Open full LIVE on Rumble</a>
+  <div class="lygo-rumble-cta-row" role="group" aria-label="Rumble referral and live links">
+    <a class="lygo-rumble-cta primary" href="https://rumble.com/register/Excavationpro/" target="_blank" rel="noopener noreferrer sponsored">Join Rumble via Excavationpro</a>
+    <a class="lygo-rumble-cta secondary" id="rumbleLiveLink" href="https://rumble.com/Excavationpro/live?mref=1th29y&amp;mc=2p3fp" target="_blank" rel="noopener noreferrer">Watch LIVE</a>
+  </div>
+  <p class="lygo-rumble-link" style="margin-top:8px">
+    Referral: <a href="https://rumble.com/register/Excavationpro/" target="_blank" rel="noopener noreferrer sponsored">rumble.com/register/Excavationpro</a>
   </p>
 </section>
 <script>
