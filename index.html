@@ -5,21 +5,66 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Free BPM Finder Guide — How to Detect Song Tempo Online | BPMfinder.ca</title>
 <meta name="description" content="Learn how free online BPM detection works, how to check song tempo privately in your browser, and open the free BPMfinder tool. Guides for DJs, producers, and dancers by Justin Helmer.">
-<meta name="author" content="Justin Helmer / Excavationpro / LYGO">
+<meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bpmfinder.ca/">
-<meta property="og:title" content="Free BPM Finder Guide | BPMfinder.ca">
-<meta property="og:description" content="Original guides on free tempo detection, plus a private browser BPM tool.">
+<meta property="og:title" content="Free BPM Finder Guide — How to Detect Song Tempo Online | BPMfinder.ca">
+<meta property="og:description" content="Learn how free online BPM detection works, how to check song tempo privately in your browser, and open the free BPMfinder tool. Guides for DJs, producers, and dancers by Justin Helmer.">
 <meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:card" content="summary">
 <meta name="twitter:site" content="@Excavationpro">
-<meta name="twitter:title" content="Free BPM Finder Guide | BPMfinder.ca">
-<meta name="twitter:description" content="How free online BPM detection works — and a free private tool.">
-<meta name="theme-color" content="#f7f6f3">
+<meta name="theme-color" content="#f6f5f2">
+<style>
+:root {
+  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
+  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
+  background: var(--bg); line-height: 1.7; font-size: 18px; }
+a { color: var(--link); }
+.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
+header.site { background: var(--card); border-bottom: 1px solid var(--line);
+  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
+.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
+.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
+.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
+.navlinks a { text-decoration: none; color: var(--muted); }
+.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
+.hero { padding: 2rem 0 1rem; }
+.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
+.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
+.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
+.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
+  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
+.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
+  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
+.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
+.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
+.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
+.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
+  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
+.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
+.grid2 { display: grid; gap: .9rem; }
+@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
+.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
+  border-radius: 10px; text-decoration: none; color: inherit; }
+.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
+.tile span { color: var(--muted); font-size: .92rem; }
+footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
+  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
+footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
+ul, ol { padding-left: 1.2rem; }
+table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
+table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
+table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
+</style>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -34,86 +79,51 @@
     {
       "@type": "Organization",
       "@id": "https://bpmfinder.ca/#org",
-      "name": "Excavationpro / LYGO",
+      "name": "BPMfinder.ca / Justin Helmer",
       "url": "https://bpmfinder.ca/",
+      "email": "excavationstation@gmail.com",
       "sameAs": ["https://x.com/Excavationpro", "https://github.com/DeepSeekOracle"]
     },
     {
       "@type": "WebApplication",
-      "name": "BPMfinder free tempo tool",
+      "name": "Free BPM Finder tool",
       "url": "https://bpmfinder.ca/app.html",
       "applicationCategory": "MultimediaApplication",
       "operatingSystem": "Any modern browser",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CAD" },
       "isAccessibleForFree": true
     }
   ]
 }
 </script>
-<style>
-:root {
-  --bg: #f7f6f3; --card: #fff; --ink: #1a1a1a; --muted: #5c5c5c;
-  --line: #e4e0d8; --accent: #0b6e4f; --accent2: #1a3a5c; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink); background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 760px; margin: 0 auto; padding: 0 1.25rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line); padding: 1rem 0; position: sticky; top: 0; z-index: 20; }
-.nav { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui, sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; }
-.navlinks { display: flex; flex-wrap: wrap; gap: 0.65rem 1rem; font-family: system-ui, sans-serif; font-size: 0.9rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover { color: var(--accent); }
-.hero { padding: 2.25rem 0 1.25rem; }
-.hero h1 { font-size: clamp(1.7rem, 4vw, 2.3rem); line-height: 1.25; margin: 0 0 0.75rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.15rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: 0.65rem; font-family: system-ui, sans-serif; }
-.btn { display: inline-block; padding: 0.7rem 1.1rem; border-radius: 8px; text-decoration: none !important; font-weight: 700; font-size: 0.92rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.btn:hover { filter: brightness(1.05); }
-.notice { margin: 1.15rem 0 0; padding: 0.9rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4; border-radius: 10px; font-family: system-ui, sans-serif; font-size: 0.92rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.4rem 1.3rem; margin: 1.15rem 0; }
-.card h2 { margin: 0 0 0.5rem; font-size: 1.3rem; color: var(--accent2); }
-.card h3 { margin: 1.1rem 0 0.35rem; font-size: 1.05rem; }
-.meta { font-family: system-ui, sans-serif; font-size: 0.82rem; color: var(--muted); margin-bottom: 0.6rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card); border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui, sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.08em; color: #999; margin-bottom: 6px; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.4rem; font-family: system-ui, sans-serif; font-size: 0.88rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; margin-bottom: 0.65rem; }
-ul { padding-left: 1.2rem; }
-</style>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">BPMfinder.ca</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a>
-      <a href="/app.html">Open free BPM tool</a>
-      <a href="/#how-it-works">How it works</a>
-      <a href="/#faq">FAQ</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="https://huggingface.co/spaces/DeepSeekOracle/LYGO-Resonance-Engine" target="_blank" rel="noopener">Resonance Engine</a>
+      <a href="/" aria-current="page">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html">Guides</a> <a href="/how-to-find-bpm.html">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
-
 <div class="wrap">
+
   <section class="hero">
     <h1>Free online BPM finder — guides and a private browser tool</h1>
     <p class="lead">
-      BPMfinder.ca helps DJs, producers, and dancers <strong>find the tempo of a song</strong> without installing software.
-      Read original guides here, then open the free tool to analyze MP3, WAV, or FLAC files in your browser.
+      BPMfinder.ca helps DJs, producers, dancers, and music students
+      <strong>find the tempo of a song</strong> without installing software.
+      Read original, practical guides on this site, then open the free tool to analyze
+      MP3, WAV, or FLAC files privately in your browser.
     </p>
     <div class="cta-row">
       <a class="btn primary" href="/app.html">Open free BPM tool →</a>
-      <a class="btn" href="#how-it-works">How free BPM detection works</a>
-      <a class="btn" href="https://huggingface.co/spaces/DeepSeekOracle/LYGO-Resonance-Engine" target="_blank" rel="noopener">LYGO Resonance Engine</a>
+      <a class="btn" href="/how-to-find-bpm.html">How to find BPM step-by-step</a>
+      <a class="btn" href="/guides.html">All guides</a>
     </div>
     <p class="notice">
-      <strong>Tool app:</strong> the full interactive detector (waveform, confidence, delay times, share) lives at
-      <a href="/app.html">bpmfinder.ca/app.html</a> — private analysis, no account required.
+      <strong>Site status:</strong> Live and free. The interactive detector is at
+      <a href="/app.html">bpmfinder.ca/app.html</a>. Audio is analyzed on your device — no account required.
     </p>
   </section>
 
@@ -123,22 +133,23 @@ ul { padding-left: 1.2rem; }
     <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
   </div>
 
+
   <main>
     <article class="card" id="how-it-works">
       <h2>How free browser BPM detection works</h2>
-      <p class="meta">Educational overview · Justin Helmer / Excavationpro</p>
+      <p class="meta">Educational overview · Justin Helmer · Updated 2026</p>
       <p>
         Beats per minute (BPM) is how many pulses fit into one minute of music. Automatic detectors look for
         repeating energy — usually kick drums or strong transients — and estimate how often those events occur.
-        On a clear electronic beat the result is often stable. On ambient, spoken word, or swing-heavy tracks,
-        the detector may lock to a half-time or double-time feel.
+        On a clear electronic beat the result is often stable. On ambient music, spoken word, or swing-heavy
+        performances, the detector may lock to a half-time or double-time feel.
       </p>
       <p>
         Browser tools can decode audio with the Web Audio API and run detection locally. That means unreleased
-        demos do not need to be uploaded to a stranger’s server. Free tools still need human judgment: use
-        half/double buttons, tap tempo, and your ears.
+        demos do not need to be uploaded to a stranger’s server for a basic tempo check. Free tools still need
+        human judgment: use half/double buttons, tap tempo, and your ears before you commit a project tempo.
       </p>
-      <h3>A simple workflow</h3>
+      <h3>A simple workflow that works</h3>
       <ol>
         <li>Open the free tool at <a href="/app.html">/app.html</a>.</li>
         <li>Drop a 20–40 second section with drums when possible.</li>
@@ -159,7 +170,8 @@ ul { padding-left: 1.2rem; }
       </p>
       <p>
         If you are building a setlist, pick one counting style and stick to it. Consistency across tracks is more
-        useful than arguing about metric theory.
+        useful than arguing about metric theory. Our <a href="/bpm-for-djs.html">BPM for DJs guide</a> explains
+        how tempo notes help beatmatching without overcomplicating your night.
       </p>
     </article>
 
@@ -170,17 +182,21 @@ ul { padding-left: 1.2rem; }
         “upload for processing” sites that store files. Always keep offline masters safe; free stream copies and
         analysis clips are derivatives, not archives.
       </p>
-      <p>See our <a href="/privacy.html">Privacy policy</a> for cookies and advertising details.</p>
+      <p>
+        We explain cookies and advertising (including Google AdSense when approved) on our
+        <a href="/privacy.html">Privacy policy</a>. Contact details are on the
+        <a href="/contact.html">Contact page</a>.
+      </p>
     </article>
 
     <article class="card">
-      <h2>Pair tempo notes with creative sound tools</h2>
-      <p>
-        After you know a BPM, you can set delays, align loops, or plan a live radio set. For creative experiments
-        beyond tempo — turning images into soundscapes — try the free
-        <a href="https://huggingface.co/spaces/DeepSeekOracle/LYGO-Resonance-Engine" target="_blank" rel="noopener">LYGO Resonance Engine on Hugging Face</a>.
-        Use BPM for structure; use Resonance for texture and inspiration.
-      </p>
+      <h2>Guides for real studio and dance-floor questions</h2>
+      <div class="grid2">
+        <a class="tile" href="/how-to-find-bpm.html"><strong>How to find a song’s BPM</strong><span>Step-by-step tempo detection without software installs.</span></a>
+        <a class="tile" href="/tap-tempo-guide.html"><strong>Tap tempo guide</strong><span>When automatic detection fails, train your ear with tapping.</span></a>
+        <a class="tile" href="/bpm-for-djs.html"><strong>BPM for DJs</strong><span>Beatmatching, setlist planning, and confidence ranges.</span></a>
+        <a class="tile" href="/delay-times-from-bpm.html"><strong>Delay times from BPM</strong><span>Convert tempo to note lengths for delays and FX.</span></a>
+      </div>
     </article>
 
     <article class="card" id="faq">
@@ -193,32 +209,42 @@ ul { padding-left: 1.2rem; }
       <p>Common formats such as MP3, WAV, and FLAC work in modern browsers. If one fails, convert a short clip to WAV.</p>
       <h3>Where is the full tool?</h3>
       <p>The interactive app is at <a href="/app.html">https://bpmfinder.ca/app.html</a>.</p>
+      <h3>Who runs this site?</h3>
+      <p>BPMfinder.ca is published by Justin Helmer. See <a href="/about.html">About</a> and <a href="/contact.html">Contact</a>.</p>
+      <h3>Is the site down?</h3>
+      <p>No — if you are reading this page, the site is operational. If a page fails, try https://www.bpmfinder.ca/ or clear DNS cache after recent DNS changes.</p>
     </article>
 
     <article class="card">
       <h2>About the publisher</h2>
       <p>
         BPMfinder.ca is published by <strong>Justin Helmer</strong> (Excavationpro / LYGO). Related free projects include
-        the music portal at <a href="https://asiancoastline.com/">asiancoastline.com</a> and the systems hub at
-        <a href="https://deepseekoracle.com/">deepseekoracle.com</a>.
+        the music portal at <a href="https://asiancoastline.com/">asiancoastline.com</a> and writing at
+        <a href="https://eternalhaven.ca/">eternalhaven.ca</a>. This site focuses on practical tempo education and a free tool —
+        not spam, not a parked domain, and not a single-line landing page.
       </p>
     </article>
   </main>
-</div>
 
+</div>
 <footer class="site">
   <div class="wrap">
     <nav aria-label="Footer">
       <a href="/">Home</a>
       <a href="/app.html">BPM tool</a>
+      <a href="/guides.html">Guides</a>
+      <a href="/how-to-find-bpm.html">How to find BPM</a>
+      <a href="/bpm-for-djs.html">BPM for DJs</a>
+      <a href="/tap-tempo-guide.html">Tap tempo</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
       <a href="/privacy.html">Privacy</a>
-      <a href="https://huggingface.co/spaces/DeepSeekOracle/LYGO-Resonance-Engine" target="_blank" rel="noopener">Resonance Engine</a>
-      <a href="https://asiancoastline.com/">Music portal</a>
-      <a href="https://www.paypal.com/paypalme/ExcavationPro" target="_blank" rel="noopener">Support</a>
+      <a href="/terms.html">Terms</a>
     </nav>
-    <p>© <span id="y"></span> Justin Helmer / BPMfinder.ca. Free educational guides and free tempo tool.</p>
+    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
+    Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
   </div>
 </footer>
-<script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+
 </body>
 </html>
