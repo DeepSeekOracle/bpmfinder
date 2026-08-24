@@ -8,243 +8,102 @@
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/home.css">
+<link rel="image_src" href="https://bpmfinder.ca/assets/og-home.jpg">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bpmfinder.ca/">
-<meta property="og:title" content="Free BPM Finder Guide — How to Detect Song Tempo Online | BPMfinder.ca">
-<meta property="og:description" content="Learn how free online BPM detection works, how to check song tempo privately in your browser, and open the free BPMfinder tool. Guides for DJs, producers, and dancers by Justin Helmer.">
-<meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary">
+<meta property="og:title" content="BPMfinder.ca — free tempo in the browser">
+<meta property="og:description" content="Detect song BPM privately on your device. Guides for DJs, producers, and dancers. No account.">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
-<meta name="theme-color" content="#f6f5f2">
-<style>
-:root {
-  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
-  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
-  background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line);
-  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
-.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
-.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
-.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
-  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
-  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
-.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
-.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
-.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
-  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
-.grid2 { display: grid; gap: .9rem; }
-@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
-.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
-  border-radius: 10px; text-decoration: none; color: inherit; }
-.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
-.tile span { color: var(--muted); font-size: .92rem; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
-  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
-ul, ol { padding-left: 1.2rem; }
-table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
-table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
-table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
-</style>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebSite",
-      "name": "BPMfinder.ca",
-      "url": "https://bpmfinder.ca/",
-      "description": "Free BPM guides and a private browser tempo detector.",
-      "publisher": { "@id": "https://bpmfinder.ca/#org" }
-    },
-    {
-      "@type": "Organization",
-      "@id": "https://bpmfinder.ca/#org",
-      "name": "BPMfinder.ca / Justin Helmer",
-      "url": "https://bpmfinder.ca/",
-      "email": "excavationstation@gmail.com",
-      "sameAs": ["https://x.com/Excavationpro", "https://github.com/DeepSeekOracle"]
-    },
-    {
-      "@type": "WebApplication",
-      "name": "Free BPM Finder tool",
-      "url": "https://bpmfinder.ca/app.html",
-      "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "Any modern browser",
-      "offers": { "@type": "Offer", "price": "0", "priceCurrency": "CAD" },
-      "isAccessibleForFree": true
-    }
-  ]
-}
-</script>
+<meta name="twitter:title" content="BPMfinder.ca — free tempo in the browser">
+<meta name="twitter:description" content="MP3, WAV, FLAC. Analyzed on your device. No account.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
 </head>
-<body>
-<header class="site">
-  <div class="wrap nav">
-    <a class="brand" href="/">BPMfinder.ca</a>
-    <nav class="navlinks" aria-label="Primary">
-      <a href="/" aria-current="page">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html">Guides</a> <a href="/how-to-find-bpm.html">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
-    </nav>
-  </div>
+<body class="home">
+<header class="top">
+  <a class="brand" href="/">BPMfinder</a>
+  <nav>
+    <a href="/" aria-current="page">Home</a>
+    <a href="/app.html">Tool</a>
+    <a href="/guides.html">Guides</a>
+    <a href="/about.html">About</a>
+  </nav>
 </header>
-<div class="wrap">
-
-  <section class="hero">
-    <h1>Free online BPM finder — guides and a private browser tool</h1>
-    <p class="lead">
-      BPMfinder.ca helps DJs, producers, dancers, and music students
-      <strong>find the tempo of a song</strong> without installing software.
-      Read original, practical guides on this site, then open the free tool to analyze
-      MP3, WAV, or FLAC files privately in your browser.
-    </p>
+<section class="hero">
+  <div class="hero-inner">
+    <p class="kicker">Justin Helmer · free · private in the browser</p>
+    <h1>Find a song’s tempo without installing a DAW — or uploading your demo to a stranger.</h1>
+    <p class="lead">BPMfinder.ca helps DJs, producers, dancers, and music students <strong>find the tempo of a song</strong> without installing software. Read original guides here, then open the free tool to analyze MP3, WAV, or FLAC files privately in your browser.</p>
     <div class="cta-row">
-      <a class="btn primary" href="/app.html">Open free BPM tool →</a>
-      <a class="btn" href="/how-to-find-bpm.html">How to find BPM step-by-step</a>
-      <a class="btn" href="/guides.html">All guides</a>
+      <a class="btn primary" href="/app.html">Open free BPM tool</a>
+      <a class="btn ghost" href="/how-to-find-bpm.html">Step-by-step guide</a>
+      <a class="btn ghost" href="/guides.html">All guides</a>
     </div>
-    <p class="notice">
-      <strong>Site status:</strong> Live and free. The interactive detector is at
-      <a href="/app.html">bpmfinder.ca/app.html</a>. Audio is analyzed on your device — no account required.
-    </p>
-  </section>
-
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+    <p class="notice">Audio is analyzed on your device. No account required. The interactive detector is at <a href="/app.html">/app.html</a>.</p>
   </div>
-
-
-  <main>
-    <article class="card" id="how-it-works">
-      <h2>How free browser BPM detection works</h2>
-      <p class="meta">Educational overview · Justin Helmer · Updated 2026</p>
-      <p>
-        Beats per minute (BPM) is how many pulses fit into one minute of music. Automatic detectors look for
-        repeating energy — usually kick drums or strong transients — and estimate how often those events occur.
-        On a clear electronic beat the result is often stable. On ambient music, spoken word, or swing-heavy
-        performances, the detector may lock to a half-time or double-time feel.
-      </p>
-      <p>
-        Browser tools can decode audio with the Web Audio API and run detection locally. That means unreleased
-        demos do not need to be uploaded to a stranger’s server for a basic tempo check. Free tools still need
-        human judgment: use half/double buttons, tap tempo, and your ears before you commit a project tempo.
-      </p>
-      <h3>A simple workflow that works</h3>
-      <ol>
-        <li>Open the free tool at <a href="/app.html">/app.html</a>.</li>
-        <li>Drop a 20–40 second section with drums when possible.</li>
-        <li>Read BPM and confidence.</li>
-        <li>Try half or double if the groove feels wrong.</li>
-        <li>Confirm with tap tempo for eight bars.</li>
-        <li>Copy BPM or use delay-time notes for production.</li>
-      </ol>
-      <p><a href="/app.html"><strong>Launch the free BPM tool →</strong></a></p>
-    </article>
-
-    <article class="card">
-      <h2>When half-time and double-time matter</h2>
-      <p>
-        Hip-hop and trap often sit near 70–90 or 140–180 depending on how you count. Drum-and-bass lives near
-        170–180 but can feel like half when you only track the kick. Good free tools expose one-click half and
-        double so you match your DAW or DJ software convention without re-running analysis.
-      </p>
-      <p>
-        If you are building a setlist, pick one counting style and stick to it. Consistency across tracks is more
-        useful than arguing about metric theory. Our <a href="/bpm-for-djs.html">BPM for DJs guide</a> explains
-        how tempo notes help beatmatching without overcomplicating your night.
-      </p>
-    </article>
-
-    <article class="card">
-      <h2>Privacy: your audio can stay on your device</h2>
-      <p>
-        BPMfinder’s tool page analyzes files in the browser. That is a better default for unreleased music than
-        “upload for processing” sites that store files. Always keep offline masters safe; free stream copies and
-        analysis clips are derivatives, not archives.
-      </p>
-      <p>
-        We explain cookies and advertising (including Google AdSense when approved) on our
-        <a href="/privacy.html">Privacy policy</a>. Contact details are on the
-        <a href="/contact.html">Contact page</a>.
-      </p>
-    </article>
-
-    <article class="card">
-      <h2>Guides for real studio and dance-floor questions</h2>
-      <div class="grid2">
-        <a class="tile" href="/how-to-find-bpm.html"><strong>How to find a song’s BPM</strong><span>Step-by-step tempo detection without software installs.</span></a>
-        <a class="tile" href="/tap-tempo-guide.html"><strong>Tap tempo guide</strong><span>When automatic detection fails, train your ear with tapping.</span></a>
-        <a class="tile" href="/bpm-for-djs.html"><strong>BPM for DJs</strong><span>Beatmatching, setlist planning, and confidence ranges.</span></a>
-        <a class="tile" href="/delay-times-from-bpm.html"><strong>Delay times from BPM</strong><span>Convert tempo to note lengths for delays and FX.</span></a>
-      </div>
-    </article>
-
-    <article class="card" id="faq">
-      <h2>FAQ</h2>
-      <h3>Is BPMfinder free?</h3>
-      <p>Yes. Guides and the tool are free. Optional donations and ads (when approved) help with hosting.</p>
-      <h3>Do I need an account?</h3>
-      <p>No account is required to read guides or use the detector.</p>
-      <h3>What formats work?</h3>
-      <p>Common formats such as MP3, WAV, and FLAC work in modern browsers. If one fails, convert a short clip to WAV.</p>
-      <h3>Where is the full tool?</h3>
-      <p>The interactive app is at <a href="/app.html">https://bpmfinder.ca/app.html</a>.</p>
-      <h3>Who runs this site?</h3>
-      <p>BPMfinder.ca is published by Justin Helmer. See <a href="/about.html">About</a> and <a href="/contact.html">Contact</a>.</p>
-      <h3>Is the site down?</h3>
-      <p>No — if you are reading this page, the site is operational. If a page fails, try https://www.bpmfinder.ca/ or clear DNS cache after recent DNS changes.</p>
-    </article>
-
-    <article class="card">
-      <h2>About the publisher</h2>
-      <p>
-        BPMfinder.ca is published by <strong>Justin Helmer</strong> (Excavationpro / LYGO). Related free projects include
-        the music portal at <a href="https://asiancoastline.com/">asiancoastline.com</a> and writing at
-        <a href="https://eternalhaven.ca/">eternalhaven.ca</a>. This site focuses on practical tempo education and a free tool —
-        not spam, not a parked domain, and not a single-line landing page.
-      </p>
-    </article>
-  </main>
-
-</div>
+</section>
+<main class="sheet">
+<article>
+  <h2>How free browser BPM detection works</h2>
+  <p>Beats per minute (BPM) is how many pulses fit into one minute of music. Automatic detectors look for repeating energy — usually kick drums or strong transients — and estimate how often those events occur. On a clear electronic beat the result is often stable. On ambient music, spoken word, or swing-heavy performances, the detector may lock to a half-time or double-time feel.</p>
+  <p>Browser tools can decode audio with the Web Audio API and run detection locally. Unreleased demos do not need to be uploaded to a stranger’s server for a basic tempo check. Use half/double buttons, tap tempo, and your ears before you commit a project tempo.</p>
+  <ol>
+    <li>Open the free tool at <a href="/app.html">/app.html</a>.</li>
+    <li>Drop a 20–40 second section with drums when possible.</li>
+    <li>Read BPM and confidence.</li>
+    <li>Try half or double if the groove feels wrong.</li>
+    <li>Confirm with tap tempo for eight bars.</li>
+  </ol>
+</article>
+<div class="ad-slot" aria-label="Advertisement"><div class="ad-label">Advertisement</div>
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>(adsbygoogle = window.adsbygoogle || []).push({});</script></div>
+<article>
+  <h2>When half-time and double-time matter</h2>
+  <p>Hip-hop and trap often sit near 70–90 or 140–180 depending on how you count. Drum-and-bass lives near 170–180 but can feel like half when you only track the kick. Pick one counting style and stick to it. Consistency across tracks is more useful than arguing metric theory. See the <a href="/bpm-for-djs.html">BPM for DJs guide</a>.</p>
+</article>
+<article>
+  <h2>Privacy: your audio can stay on your device</h2>
+  <p>BPMfinder’s tool page analyzes files in the browser. That is a better default for unreleased music than “upload for processing” sites that store files. Cookies and advertising are explained on the <a href="/privacy.html">Privacy policy</a>.</p>
+</article>
+<article>
+  <h2>Guides</h2>
+  <ul>
+    <li><a href="/how-to-find-bpm.html">How to find a song’s BPM</a></li>
+    <li><a href="/tap-tempo-guide.html">Tap tempo guide</a></li>
+    <li><a href="/bpm-for-djs.html">BPM for DJs</a></li>
+    <li><a href="/delay-times-from-bpm.html">Delay times from BPM</a></li>
+  </ul>
+</article>
+<article>
+  <h2>FAQ</h2>
+  <h3>Is BPMfinder free?</h3><p>Yes. Guides and the tool are free.</p>
+  <h3>Do I need an account?</h3><p>No.</p>
+  <h3>What formats work?</h3><p>MP3, WAV, and FLAC in modern browsers. If one fails, convert a short clip to WAV.</p>
+  <h3>Who runs this site?</h3><p>Justin Helmer. See <a href="/about.html">About</a> and <a href="/contact.html">Contact</a>.</p>
+</article>
+</main>
 <footer class="site">
-  <div class="wrap">
-    <nav aria-label="Footer">
-      <a href="/">Home</a>
-      <a href="/app.html">BPM tool</a>
-      <a href="/guides.html">Guides</a>
-      <a href="/how-to-find-bpm.html">How to find BPM</a>
-      <a href="/bpm-for-djs.html">BPM for DJs</a>
-      <a href="/tap-tempo-guide.html">Tap tempo</a>
-      <a href="/about.html">About</a>
-      <a href="/contact.html">Contact</a>
-      <a href="/privacy.html">Privacy</a>
-      <a href="/terms.html">Terms</a>
-    </nav>
-    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
-    Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
-  </div>
+  <p class="family">
+    <a href="https://eternalhaven.ca/">eternalhaven.ca</a>
+    <a href="https://excavationpro.ca/">excavationpro.ca</a>
+    <a href="https://deepseekoracle.com/">deepseekoracle.com</a>
+    <a href="https://chatagent.ca/">chatagent.ca</a>
+    <a href="https://asiancoastline.com/">asiancoastline.com</a>
+    <a href="https://bpmfinder.ca/">bpmfinder.ca</a>
+  </p>
+  <p>© <span class="y"></span> Justin Helmer. bpmfinder.ca</p>
 </footer>
-
+<script>document.querySelectorAll(".y").forEach(function(n){n.textContent=new Date().getFullYear()});</script>
 </body>
 </html>
