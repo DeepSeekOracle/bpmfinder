@@ -604,7 +604,7 @@ PAGES["bpm-for-running.html"] = dict(
 # ---------------------------------------------------------------- accuracy
 PAGES["bpm-detection-accuracy.html"] = dict(
     title="How Accurate Is Browser BPM Detection? Tested | BPMfinder.ca",
-    desc="A measured accuracy test of the BPMfinder browser detector: 21 generated click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.",
+    desc="A measured test of the browser BPM detector: 21 click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.",
     path="/bpm-detection-accuracy.html",
     active="guides",
     h1="How accurate is browser BPM detection?",
@@ -699,7 +699,71 @@ PAGES["bpm-detection-accuracy.html"] = dict(
     ],
 )
 
-# ---------------------------------------------------------------- guides index
+# ---------------------------------------------------------------- tools hub
+PAGES["tools.html"] = dict(
+    title="Free Creator Tools — BPM, Soundboard & More | BPMfinder.ca",
+    desc="A map of the free creator tools: the BPM finder, delay tables, Soundboard FX, AI Talk Radio, the music player, LYGO games, SkillHub, and guide sites.",
+    path="/tools.html",
+    active="tools",
+    h1="Free tools for creators",
+    lead="BPMfinder is one tool in a wider workshop. The same independent stack includes a live soundboard, an AI radio station, a music player, games, a skill catalog, and long-form guides.",
+    minutes="4 min read",
+    updated="2026-10-20",
+    tags=["tools", "soundboard", "creators"],
+    body=f"""
+<article class="card">
+  <h2>The tools, in one place</h2>
+  <p>Most people arrive at BPMfinder for one job: find a tempo. That is the right place to start, but it is not the whole workshop. The tools below are built for the same kind of person &mdash; a producer, DJ, streamer, writer, or creator who wants a useful result without an account, a subscription, or an upload to a stranger&rsquo;s server.</p>
+  <div class="notice"><strong>Featured: Soundboard FX.</strong> The live creator soundboard inside AI Talk Radio &mdash; open the station, then choose the Soundboard tab. <a href="https://chatagent.ca/talk-radio/">Open AI Talk Radio &rarr;</a></div>
+  <div class="grid2">
+    <a class="tile" href="/app.html"><strong>BPM Finder</strong><span>Private browser tempo detection with confidence, tap tempo, half/double, and delay times.</span></a>
+    <a class="tile" href="/delay-times-from-bpm.html"><strong>Delay &amp; tempo tables</strong><span>Convert BPM to note-value milliseconds for delays, reverb, and session planning.</span></a>
+    <a class="tile" href="/tap-tempo-guide.html"><strong>Tap tempo guide</strong><span>A manual check for the tracks and performances that confuse a detector.</span></a>
+    <a class="tile" href="https://chatagent.ca/talk-radio/"><strong>Soundboard FX</strong><span>A live creator soundboard inside the AI Talk Radio studio &mdash; open the station, then the Soundboard tab.</span></a>
+    <a class="tile" href="https://chatagent.ca/talk-radio/"><strong>AI Talk Radio</strong><span>The live studio around the soundboard: stations, shows, and a continuous stream.</span></a>
+    <a class="tile" href="https://asiancoastline.com/"><strong>Free music player</strong><span>The Excavationpro catalog, streamed without an account. A good place to test a tempo workflow.</span></a>
+    <a class="tile" href="https://chatagent.ca/games/"><strong>LYGO games</strong><span>Browser games and interactive experiments from the same workshop.</span></a>
+    <a class="tile" href="https://chatagent.ca/lygoskillhub.html"><strong>LYGO SkillHub</strong><span>The public skill catalog and download portal for LYGO agents and builders.</span></a>
+    <a class="tile" href="https://deepseekoracle.com/"><strong>AI &amp; creator guides</strong><span>Longer guides on BPM, local AI, and practical creator workflows.</span></a>
+    <a class="tile" href="https://eternalhaven.ca/"><strong>Books &amp; games</strong><span>Eternal Haven&rsquo;s books, essays, music, and browser games.</span></a>
+    <a class="tile" href="https://justinhelmer.ca/"><strong>Artist portal</strong><span>Justin Helmer&rsquo;s artist identity, lyrics, stores, and live rooms.</span></a>
+    <a class="tile" href="https://excavationpro.ca/"><strong>Music &amp; essays</strong><span>The approved Excavationpro site: original music, writing, and a clear listening license.</span></a>
+  </div>
+</article>
+<article class="card">
+  <h2>How the tools fit together</h2>
+  <p>Use BPMfinder when you need a number: the tempo of a track, a delay time, a half-time check. Use the Soundboard when the work is live &mdash; drops, stingers, reactions, and the small sounds that make a stream feel produced. Use the music player when you want something to listen to or test a tempo against. The guides explain the parts that a tool cannot: why a detector disagrees with your ear, how to plan a set, and when a number is the wrong question.</p>
+  <p>The common thread is local-first: the BPM analysis runs in your browser, the player streams without an account, and the guides are readable without a signup. Some tools link out to a studio or a catalog, but the entry point is always a page you can use immediately.</p>
+  <h2>What is free</h2>
+  <p>The BPM tool, the delay tables, the guides, the music player, the games, the SkillHub catalog, and the Soundboard FX tab are free to open. Optional support links on some sites help pay for hosting and time; they do not unlock a different version of the tool or a ranking.</p>
+  <h2>Start with the job</h2>
+  <ul>
+    <li><strong>I have a track and need the tempo.</strong> Open the <a href="/app.html">BPM Finder</a>, drop a 20&ndash;40 second section, then check half/double and tap tempo.</li>
+    <li><strong>I am going live.</strong> Open <a href="https://chatagent.ca/talk-radio/">AI Talk Radio</a> and choose the Soundboard tab for drops, stingers, and reactions.</li>
+    <li><strong>I am producing.</strong> Use the <a href="/delay-times-from-bpm.html">delay table</a> to turn tempo into note-value milliseconds, then dial the effect by ear.</li>
+    <li><strong>I am learning.</strong> Read <a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a> first; it explains the workflow the other guides assume.</li>
+  </ul>
+</article>
+<article class="card faq">
+  <h2>FAQ</h2>
+  <h3>Are all of these tools free?</h3>
+  <p>Yes. The tools listed here are free to open. Some sites accept optional support, but no tool requires a payment or an account.</p>
+  <h3>Where is the soundboard?</h3>
+  <p>Open <a href="https://chatagent.ca/talk-radio/">AI Talk Radio</a>, then choose the <strong>Soundboard</strong> tab. It is part of the live studio, not a separate download.</p>
+  <h3>Do the tools upload my files?</h3>
+  <p>The BPM tool analyzes audio in your browser for tempo detection. The player streams from the catalog. The <a href="/privacy.html">privacy policy</a> covers the BPMfinder side in detail.</p>
+  <h3>Which tool should I start with?</h3>
+  <p>If you have a track and need its tempo, start with the <a href="/app.html">BPM Finder</a>. If you are planning a live stream, start with the Soundboard. If you are learning, start with <a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a>.</p>
+</article>
+""",
+    faqs=[
+        ("Are all of these tools free?", "Yes. The tools listed here are free to open; some sites accept optional support but none require payment or an account."),
+        ("Where is the soundboard?", "Open AI Talk Radio at chatagent.ca/talk-radio/, then choose the Soundboard tab."),
+        ("Do the tools upload my files?", "The BPM tool analyzes audio in the browser for tempo detection; the player streams from the catalog."),
+        ("Which tool should I start with?", "Use the BPM Finder for tempo, the Soundboard for live work, or How to find a song's BPM if you are learning."),
+    ],
+)
+
 PAGES["guides.html"] = dict(
     title="BPM Guides: Tempo, Tap Tempo, DJ Workflow & Delay | BPMfinder.ca",
     desc="Original BPM guides for producers, DJs, dancers, and runners: find tempo, check half-time, tap tempo, plan a set, and calculate delay times.",

@@ -8,6 +8,9 @@ body.home { margin:0; background:var(--bg); color:var(--fg); font-family:Syne,sy
 .home .brand { color:var(--fg); text-decoration:none; font-weight:800; letter-spacing:.14em; }
 .home nav a { color:var(--fg); text-decoration:none; opacity:.82; margin-left:.8rem; }
 .home nav a[aria-current="page"], .home nav a:hover { color:var(--gold); opacity:1; }
+.home nav a.tools-link { color:var(--gold); font-weight:700; border:1px solid var(--gold); border-radius:999px; padding:.2rem .55rem; }
+.home a.mini { color:inherit; text-decoration:none; display:block; }
+.home a.mini strong { color:var(--gold); }
 .hero { min-height:100svh; display:flex; flex-direction:column; justify-content:flex-end; padding-top:5.25rem; background:url("/assets/hero.jpg") center/cover no-repeat; position:relative; }
 .hero::after { content:""; position:absolute; inset:0; background:linear-gradient(180deg, rgba(9,8,10,.18) 0%, rgba(9,8,10,.28) 45%, rgba(9,8,10,.94) 100%); }
 .hero-inner { position:relative; z-index:1; padding:0 6vw 6.5vh; max-width:36rem; }

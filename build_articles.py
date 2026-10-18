@@ -68,6 +68,7 @@ HEADER = """<header class="site">
       <a href="/"{home}>Home</a>
       <a href="/app.html"{app}>BPM tool</a>
       <a href="/guides.html"{guides}>Guides</a>
+      <a href="/tools.html"{tools} class="nav-tools">Tools</a>
       <a href="/about.html"{about}>About</a>
       <a href="/contact.html"{contact}>Contact</a>
       <a href="/privacy.html"{privacy}>Privacy</a>
@@ -82,6 +83,7 @@ FOOTER = """<footer class="site">
       <a href="/">Home</a>
       <a href="/app.html">BPM tool</a>
       <a href="/guides.html">Guides</a>
+      <a href="/tools.html">Tools</a>
       <a href="/how-to-find-bpm.html">How to find BPM</a>
       <a href="/bpm-for-djs.html">BPM for DJs</a>
       <a href="/tap-tempo-guide.html">Tap tempo</a>
@@ -195,6 +197,36 @@ def schema_for(slug: str, page: dict) -> str:
             "description": desc,
             "isPartOf": {"@id": SITE + "/#website"},
         })
+    elif slug == "tools.html":
+        tools = [
+            ("BPM Finder", SITE + "/app.html"),
+            ("Delay & tempo tables", SITE + "/delay-times-from-bpm.html"),
+            ("Tap tempo guide", SITE + "/tap-tempo-guide.html"),
+            ("Soundboard FX", "https://chatagent.ca/talk-radio/"),
+            ("AI Talk Radio", "https://chatagent.ca/talk-radio/"),
+            ("Free music player", "https://asiancoastline.com/"),
+            ("LYGO games", "https://chatagent.ca/games/"),
+            ("LYGO SkillHub", "https://chatagent.ca/lygoskillhub.html"),
+            ("AI & creator guides", "https://deepseekoracle.com/"),
+            ("Books & games", "https://eternalhaven.ca/"),
+            ("Artist portal", "https://justinhelmer.ca/"),
+            ("Music & essays", "https://excavationpro.ca/"),
+        ]
+        graph.append({
+            "@type": "CollectionPage",
+            "@id": canonical + "#page",
+            "url": canonical,
+            "name": title,
+            "description": desc,
+            "isPartOf": {"@id": SITE + "/#website"},
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListElement": [
+                    {"@type": "ListItem", "position": i + 1, "name": name, "url": url}
+                    for i, (name, url) in enumerate(tools)
+                ],
+            },
+        })
     else:
         graph.append({
             "@type": "Article",
@@ -248,7 +280,9 @@ def schema_for(slug: str, page: dict) -> str:
         "bpm-detection-accuracy.html", "guides.html",
     }
     crumbs = [{"@type": "ListItem", "position": 1, "name": "Home", "item": SITE + "/"}]
-    if slug in guide_pages:
+    if slug == "tools.html":
+        crumbs.append({"@type": "ListItem", "position": 2, "name": "Tools", "item": SITE + "/tools.html"})
+    elif slug in guide_pages:
         crumbs.append({"@type": "ListItem", "position": 2, "name": "Guides", "item": SITE + "/guides.html"})
     crumbs.append({"@type": "ListItem", "position": len(crumbs) + 1, "name": title, "item": canonical})
     graph.append({"@type": "BreadcrumbList", "itemListElement": crumbs})
@@ -256,18 +290,32 @@ def schema_for(slug: str, page: dict) -> str:
 
 
 def header(active: str) -> str:
-    keys = ["home", "app", "guides", "about", "contact", "privacy"]
+    keys = ["home", "app", "guides", "tools", "about", "contact", "privacy"]
     marks = {k: ' aria-current="page"' for k in keys if k == active}
     return HEADER.format(**{k: marks.get(k, "") for k in keys})
 
 
 def hero(page: dict) -> str:
     tags = "".join(f'<span class="tag">{t}</span>' for t in page.get("tags", []))
+    path = page.get("path", "")
+    if path == "/tools.html":
+        crumb = '<a href="/">Home</a> / Tools'
+        kind = "Tools"
+    elif path == "/guides.html":
+        crumb = '<a href="/">Home</a> / <a href="/guides.html">Guides</a>'
+        kind = "Guides"
+    elif path in ("/about.html", "/privacy.html", "/terms.html", "/contact.html"):
+        label = path.strip("/").split(".")[0].capitalize()
+        crumb = f'<a href="/">Home</a> / {label}'
+        kind = "About" if path == "/about.html" else label
+    else:
+        crumb = f'<a href="/">Home</a> / <a href="/guides.html">Guides</a> / {plain(page["h1"])}'
+        kind = "Guide"
     return f"""<section class="hero">
-  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / {plain(page["h1"])}</p>
+  <p class="breadcrumb">{crumb}</p>
   <h1>{page["h1"]}</h1>
   <p class="lead">{page["lead"]}</p>
-  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="{page.get("updated", UPDATED)}">Updated {page.get("updated", UPDATED)}</time> &middot; {page.get("minutes", "6 min read")} &middot; {tags}</p>
+  <p class="article-meta">{kind} &middot; Justin Helmer &middot; <time datetime="{page.get("updated", UPDATED)}">Updated {page.get("updated", UPDATED)}</time> &middot; {page.get("minutes", "6 min read")} &middot; {tags}</p>
   <div class="cta-row">
     <a class="btn primary" href="/app.html">Open free BPM tool</a>
     <a class="btn" href="/guides.html">All guides</a>
@@ -310,7 +358,7 @@ def build() -> None:
         "/contact.html": "0.6", "/privacy.html": "0.5", "/terms.html": "0.5",
     }
     entries = [
-        ("/", "1.0"), ("/app.html", "0.95"), ("/guides.html", "0.9"),
+        ("/", "1.0"), ("/app.html", "0.95"), ("/tools.html", "0.9"), ("/guides.html", "0.9"),
         ("/how-to-find-bpm.html", "0.9"), ("/bpm-for-djs.html", "0.85"),
         ("/delay-times-from-bpm.html", "0.85"), ("/tap-tempo-guide.html", "0.85"),
         ("/half-time-double-time.html", "0.8"), ("/bpm-for-running.html", "0.8"),
