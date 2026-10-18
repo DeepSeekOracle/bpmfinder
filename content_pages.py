@@ -736,6 +736,9 @@ PAGES["tools.html"] = dict(
   <p>The common thread is local-first: the BPM analysis runs in your browser, the player streams without an account, and the guides are readable without a signup. Some tools link out to a studio or a catalog, but the entry point is always a page you can use immediately.</p>
   <h2>What is free</h2>
   <p>The BPM tool, the delay tables, the guides, the music player, the games, the SkillHub catalog, and the Soundboard FX tab are free to open. Optional support links on some sites help pay for hosting and time; they do not unlock a different version of the tool or a ranking.</p>
+  <h2>How this hub is maintained</h2>
+  <p>This page is the map, not the product. Each card points to the canonical tool or site; if a tool moves, the card is updated in the same pass. The hub is deliberately ad-free: it is a directory, and a directory with ads around every link is a worse experience than a clean list.</p>
+  <p>We do not list a tool unless it is live and free to open. A “coming soon” card is only added when the launch page already exists. If a link is broken, the <a href="/contact.html">contact page</a> is the fastest repair route.</p>
   <h2>Start with the job</h2>
   <ul>
     <li><strong>I have a track and need the tempo.</strong> Open the <a href="/app.html">BPM Finder</a>, drop a 20&ndash;40 second section, then check half/double and tap tempo.</li>
@@ -799,6 +802,9 @@ PAGES["guides.html"] = dict(
   <p>Have a question the guides do not answer? <a href="/contact.html">Contact us</a> and say which page you were reading.</p>
 </article>
 <article class="card">
+  <h2>What makes a useful tempo guide</h2>
+  <p>A useful tempo guide does three things: it tells you when to trust the detector, it shows the arithmetic or the listening test behind the number, and it gives you a next action. Every page here is written to that test. If a guide cannot be checked against a real file or a real count, it does not belong in the index.</p>
+  <p>We do not publish a page for every keyword. The guides cover the jobs people actually bring to a tempo tool: finding BPM, checking half/double, tapping, planning a DJ set, converting to delay times, matching running cadence, and testing the detector itself. New pages are added only when they answer a question those seven do not.</p>
   <h2>Choose a path</h2>
   <p><strong>If you are new to tempo:</strong> start with How to find a song&rsquo;s BPM, then read Half-time and double-time. Those two pages cover the mistakes that make every other number confusing.</p>
   <p><strong>If you are preparing a DJ set:</strong> read BPM for DJs, then Delay times from BPM. The first gives you the planning math; the second gives you the mix math.</p>
