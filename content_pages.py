@@ -218,7 +218,7 @@ PAGES["bpm-for-djs.html"] = dict(
   <h2>Set energy is not the same as BPM</h2>
   <p>A 128 BPM record with a sparse arrangement can feel calmer than a 122 BPM record with a busy vocal and a hard kick. Plan the set with three columns: BPM, key, and energy. Move one variable at a time. If you jump 10 BPM and 10 energy points at once, the room feels the jump even if the blend is technically clean.</p>
   <h2>Common tempo ranges</h2>
-  <p>These are conventions, not rules. Use them as a starting point, then trust the record.</p>
+  <p>These are conventions, not rules. Use them as a starting point, then trust the record. For a longer producer-facing read on browser tempo detection, see <a href="https://deepseekoracle.com/articles/free-bpm-detection-guide.html">DeepSeek Oracle&rsquo;s BPM detection guide</a>.</p>
   <div class="table-wrap"><table class="simple">
     <thead><tr><th>Style</th><th>Typical BPM</th><th>Note</th></tr></thead>
     <tbody>
@@ -411,7 +411,7 @@ PAGES["tap-tempo-guide.html"] = dict(
   <p>If the track is in 3/4 or 6/8, tap the felt pulse rather than forcing four. A waltz counted in four will give you a number that no drummer in the room recognizes.</p>
   <h2>A practice drill</h2>
   <ol>
-    <li>Play a track you know well.</li>
+    <li>Play a track you know well &mdash; the free player at <a href="https://asiancoastline.com/">Asian Coastline</a> is a good source.</li>
     <li>Tap eight bars without looking at the BPM readout.</li>
     <li>Write down your number.</li>
     <li>Run the automatic detector on the same section.</li>
@@ -675,6 +675,7 @@ PAGES["bpm-detection-accuracy.html"] = dict(
   <h2>What the confidence meter did</h2>
   <p>Most exact results displayed 100% confidence on the meter, including the noise and offbeat variants. The 70 BPM file that returned 140 displayed 40%. But the 80 BPM file that returned 160 and the 180 BPM file that returned 90 both displayed 100%. That is the important lesson: <strong>confidence measures how tightly the detected beats cluster, not whether the count matches your intention.</strong></p>
   <p>A high score means the detector found a consistent pulse. It does not mean the pulse is the one you would clap to. Always check the snare and the main backbeat before trusting a high-confidence half or double.</p>
+  <p>For a producer-facing walkthrough of the same problem, see <a href="https://deepseekoracle.com/articles/free-bpm-detection-guide.html">DeepSeek Oracle&rsquo;s practical BPM guide</a>.</p>
   <h2>Why a synthetic test still matters</h2>
   <p>It isolates the detector from the variables that make real music hard: vocals, reverb, arrangement changes, live timing, and codec artifacts. If the tool cannot handle a clean click track at a given tempo, that is a baseline fact worth knowing. If it handles the click track but fails on a real record, the problem is likely the material, not the arithmetic.</p>
   <p>We will keep this page updated if the detector changes. The method is simple enough to repeat: generate a click track at a known BPM, load it into the <a href="/app.html">tool</a>, and compare. If you run the test and get a different result, send it in &mdash; a reproducible disagreement is more useful than a review.</p>
