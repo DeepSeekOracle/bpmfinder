@@ -4,10 +4,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free BPM Finder Online — Detect Song Tempo (MP3, WAV, FLAC) | BPMfinder.ca</title>
-<meta name="title" content="Free BPM Finder Online — Detect Song Tempo (MP3, WAV, FLAC) | BPMfinder.ca">
-<meta name="description" content="Free BPM finder and online tempo detector at BPMfinder.ca. Upload MP3, WAV, or FLAC to find a song's BPM in your browser — no signup, no upload to servers. Tap tempo, confidence score, half/double fix, and beat grid. Built for DJs, producers, and dancers.">
-<meta name="keywords" content="free BPM finder, online BPM analyzer, tempo detector, find BPM of a song, song tempo finder, beat detector online, MP3 BPM, WAV BPM, FLAC BPM, tap tempo, free tempo tool, DJ BPM counter, music production, BPMfinder.ca, LYGO BPM Finder">
+<title>Free BPM Finder Online — Detect Song Tempo | BPMfinder.ca</title>
+<meta name="title" content="Free BPM Finder Online — Detect Song Tempo | BPMfinder.ca">
+<meta name="description" content="Drop an MP3, WAV, or FLAC and read the tempo in your browser. Private local analysis, confidence score, tap tempo, half/double, and delay times.">
 <meta name="author" content="Justin Helmer / Excavationpro / LYGO">
 <meta name="application-name" content="BPMfinder.ca">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
@@ -20,18 +19,18 @@
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="BPMfinder.ca — Free BPM Finder">
 <meta property="og:url" content="https://bpmfinder.ca/app.html">
-<meta property="og:title" content="BPM Tool — Free Tempo Detector App | BPMfinder.ca">
-<meta property="og:description" content="Full free BPM tool: drop MP3, WAV, or FLAC — private browser analysis, delay times, copy BPM, share.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:title" content="Free BPM Tool — Detect Tempo in Your Browser | BPMfinder.ca">
+<meta property="og:description" content="Drop MP3, WAV, or FLAC and read the tempo privately in your browser. Confidence score, tap tempo, half/double, delay times.">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Free online BPM finder and tempo detector for music producers">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
 <meta name="twitter:creator" content="@Excavationpro">
-<meta name="twitter:title" content="Free BPM Finder Online | BPMfinder.ca">
-<meta name="twitter:description" content="Find the BPM of any song free in your browser. MP3, WAV, FLAC — private, no signup.">
-<meta name="twitter:image" content="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=1200&q=80">
+<meta name="twitter:title" content="Free BPM Tool — Detect Tempo in Your Browser | BPMfinder.ca">
+<meta name="twitter:description" content="Drop an audio file and read the tempo privately in your browser. No signup, no upload for detection.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
 <meta name="twitter:image:alt" content="Free BPM finder online">
 <meta name="theme-color" content="#14110f">
 <script type="application/ld+json">{
@@ -126,8 +125,7 @@
   ]
 }</script>
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
-<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599"
-     crossorigin="anonymous"></script>
+<!-- AdSense Auto ads intentionally disabled on this tool page; the AdSense meta tag remains for site verification. Manual/labeled units live on the guide pages. -->
 <script>!function(r,u,m,b,l,e){r._Rumble=b,r[b]||(r[b]=function(){(r[b]._=r[b]._||[]).push(arguments);if(r[b]._.length==1){l=u.createElement(m),e=u.getElementsByTagName(m)[0],l.async=1,l.src="https://rumble.com/embedJS/u1th29y"+(arguments[1].video?'.'+arguments[1].video:'')+"/?url="+encodeURIComponent(location.href)+"&args="+encodeURIComponent(JSON.stringify([].slice.apply(arguments))),e.parentNode.insertBefore(l,e)}})}(window, document, "script", "Rumble");</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -1046,11 +1044,6 @@
 })();
 </script>
 
-<div class="lygo-ad-slot" aria-label="Advertisement">
-  <div class="lygo-ad-label">Advertisement</div>
-  <div class="lygo-ad-box" id="lygo-ad-top"></div>
-</div>
-
 <div class="music-portal-strip" aria-label="Excavationpro music portal">
   <p>
     <strong>Excavationpro Music Portal</strong> — free sovereign player, full catalog streams,
@@ -1142,6 +1135,16 @@
       <dt>Can I use this for DJ mixing?</dt>
       <dd>Yes. Knowing track BPM helps beatmatching and playlist planning.</dd>
     </dl>
+  </div>
+</article>
+
+<style>#how-to-read-confidence a{color:#6ee0a8;text-decoration:underline}#how-to-read-confidence a:hover{color:#c8e07a}</style>
+<article class="bpm-seo-guide lygo-panel" id="how-to-read-confidence">
+  <h2>How to read the confidence score</h2>
+  <div class="bpm-seo-body">
+    <p>The confidence meter measures how tightly the detected beat intervals cluster. It is not a grade, and it does not know which count you intended. A steady electronic pulse usually scores high; a live drummer, a rubato intro, or an ambient passage may score lower even when the tempo is clear to your ear.</p>
+    <p>In our <a href="/bpm-detection-accuracy.html">measured accuracy test</a>, a 70 BPM click track returned 140 at 40% confidence, while an 80 BPM track returned 160 and a 180 BPM track returned 90 &mdash; both at 100% confidence. A high score means the detector found a consistent pulse. It does not mean the pulse is the one you would clap to.</p>
+    <p>Use the score as a prompt to double-check, not as a verdict. Check where the snare and backbeat land, try the Half and Double buttons, then confirm with tap tempo on a clean section. If the number still feels wrong, the <a href="/how-to-find-bpm.html">step-by-step guide</a> walks through the failure modes.</p>
   </div>
 </article>
 
@@ -1287,11 +1290,6 @@
   <a class="paypal-btn" href="https://www.paypal.com/paypalme/ExcavationPro" target="_blank" rel="noopener noreferrer">Donate with PayPal</a>
 </div>
 
-<div class="lygo-ad-slot" aria-label="Advertisement">
-  <div class="lygo-ad-label">Advertisement</div>
-  <div class="lygo-ad-box" id="lygo-ad-bottom"></div>
-</div>
-
 <p class="site-footer">
   <strong>BPMfinder.ca</strong> — free BPM tool.
   · <a href="/">Guides home</a>
@@ -1337,6 +1335,7 @@
     });
   }
   function loadAdSense() {
+    return; // Tool page: intentionally ad-free (AdSense policy: no ads on functional screens).
     if (window.adsbygoogle) { pushAds(); return; }
     var headAd = document.querySelector('script[src*="pagead/js/adsbygoogle"]:not([data-lygo-adsense])');
     if (headAd) {

@@ -1,121 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cookie-key="bpmfinder_cookies">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>How to Find a Song’s BPM Online — Free Step-by-Step Guide | BPMfinder.ca</title>
-<meta name="description" content="Learn how to find a song’s BPM online: choose a clear section, run detection, check half/double tempo, and confirm with tap tempo.">
+<title>How to Find a Song&rsquo;s BPM (Step-by-Step) | BPMfinder.ca</title>
+<meta name="description" content="A practical workflow for finding a song’s BPM: choose the right section, read confidence, check half/double, and confirm with tap tempo.">
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/how-to-find-bpm.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site-kit.css">
+<link rel="stylesheet" href="/assets/article.css">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://bpmfinder.ca/how-to-find-bpm.html">
-<meta property="og:title" content="How to Find a Song’s BPM Online — Free Step-by-Step Guide | BPMfinder.ca">
-<meta property="og:description" content="Learn how to find a song’s BPM online: choose a clear section, run detection, check half/double tempo, and confirm with tap tempo.">
+<meta property="og:title" content="How to Find a Song’s BPM (Step-by-Step) | BPMfinder.ca">
+<meta property="og:description" content="A practical workflow for finding a song’s BPM: choose the right section, read confidence, check half/double, and confirm with tap tempo.">
 <meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
+<meta name="twitter:title" content="How to Find a Song’s BPM (Step-by-Step) | BPMfinder.ca">
+<meta name="twitter:description" content="A practical workflow for finding a song’s BPM: choose the right section, read confidence, check half/double, and confirm with tap tempo.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta name="twitter:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
 <meta name="theme-color" content="#f6f5f2">
-<style>
-:root {
-  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
-  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
-  background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line);
-  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
-.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
-.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
-.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
-  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
-  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
-.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
-.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
-.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
-  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
-.grid2 { display: grid; gap: .9rem; }
-@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
-.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
-  border-radius: 10px; text-decoration: none; color: inherit; }
-.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
-.tile span { color: var(--muted); font-size: .92rem; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
-  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
-ul, ol { padding-left: 1.2rem; }
-table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
-table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
-table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
-</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bpmfinder.ca/#website", "url": "https://bpmfinder.ca/", "name": "BPMfinder.ca", "description": "Free browser BPM tool and original tempo guides.", "publisher": {"@id": "https://bpmfinder.ca/#organization"}}, {"@type": "Organization", "@id": "https://bpmfinder.ca/#organization", "name": "BPMfinder.ca", "url": "https://bpmfinder.ca/", "email": "excavationstation@gmail.com", "founder": {"@type": "Person", "name": "Justin Helmer"}}, {"@type": "Article", "@id": "https://bpmfinder.ca/how-to-find-bpm.html#article", "headline": "How to find a song’s BPM (step-by-step)", "description": "A practical workflow for finding a song’s BPM: choose the right section, read confidence, check half/double, and confirm with tap tempo.", "url": "https://bpmfinder.ca/how-to-find-bpm.html", "mainEntityOfPage": {"@id": "https://bpmfinder.ca/how-to-find-bpm.html#webpage"}, "author": {"@type": "Person", "name": "Justin Helmer", "url": "https://excavationpro.ca/"}, "publisher": {"@id": "https://bpmfinder.ca/#organization"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "image": "https://bpmfinder.ca/assets/og-home.jpg"}, {"@type": "WebPage", "@id": "https://bpmfinder.ca/how-to-find-bpm.html#webpage", "url": "https://bpmfinder.ca/how-to-find-bpm.html", "name": "How to find a song’s BPM (step-by-step)", "description": "A practical workflow for finding a song’s BPM: choose the right section, read confidence, check half/double, and confirm with tap tempo.", "isPartOf": {"@id": "https://bpmfinder.ca/#website"}}, {"@type": "HowTo", "name": "How to find a song’s BPM (step-by-step)", "description": "A practical workflow for finding a song’s BPM: choose the right section, read confidence, check half/double, and confirm with tap tempo.", "url": "https://bpmfinder.ca/how-to-find-bpm.html", "step": [{"@type": "HowToStep", "name": "Pick a 20-40 second section with steady drums.", "text": "Use a verse, drop, or chorus. Avoid intros and breakdowns with no clear pulse."}, {"@type": "HowToStep", "name": "Run the detector.", "text": "Drop the file into the free BPM tool and read the BPM and confidence."}, {"@type": "HowToStep", "name": "Check half-time and double-time.", "text": "Compare the reported number with where the snare and backbeat land."}, {"@type": "HowToStep", "name": "Confirm with tap tempo.", "text": "Tap along for eight bars and compare the average with the detector."}, {"@type": "HowToStep", "name": "Record the tempo.", "text": "Write the BPM and the counting convention into the DAW session, filename, or playlist notes."}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does the tool say 140 when the song feels like 70?", "acceptedAnswer": {"@type": "Answer", "text": "Both can be correct. The detector may be counting double-time subdivisions. Check where the snare and backbeat land, then choose the count that matches how you will use the tempo."}}, {"@type": "Question", "name": "What is a good confidence score?", "acceptedAnswer": {"@type": "Answer", "text": "There is no universal threshold. High confidence on a clear electronic beat is expected; lower confidence on live, rubato, or ambient material is normal. Use the score to decide whether to double-check."}}, {"@type": "Question", "name": "Does the tool upload my audio?", "acceptedAnswer": {"@type": "Answer", "text": "No. The analysis runs in the browser; the file is not uploaded for tempo detection."}}, {"@type": "Question", "name": "Can I find BPM from a Spotify or Apple Music link?", "acceptedAnswer": {"@type": "Answer", "text": "Not reliably. Streaming files are usually protected; use a file you own or a clip you have the rights to use."}}, {"@type": "Question", "name": "What formats work?", "acceptedAnswer": {"@type": "Answer", "text": "MP3, WAV, and FLAC in current browsers. If a file will not decode, export a short 16-bit WAV clip."}}, {"@type": "Question", "name": "What if the song changes tempo?", "acceptedAnswer": {"@type": "Answer", "text": "Analyze each section separately and record the tempo for each section."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bpmfinder.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bpmfinder.ca/guides.html"}, {"@type": "ListItem", "position": 3, "name": "How to find a song’s BPM (step-by-step)", "item": "https://bpmfinder.ca/how-to-find-bpm.html"}]}]}</script>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">BPMfinder.ca</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html">Guides</a> <a href="/how-to-find-bpm.html" aria-current="page">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
+
 <div class="wrap">
-
-  <section class="hero">
-    <h1>How to find a song’s BPM (step-by-step)</h1>
-    <p class="lead">A practical method to detect tempo online or in your DAW — without guessing forever.</p>
-    <div class="cta-row"><a class="btn primary" href="/app.html">Try free tool</a><a class="btn" href="/guides.html">All guides</a></div>
-  </section>
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<section class="hero">
+  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / How to find a song’s BPM (step-by-step)</p>
+  <h1>How to find a song&rsquo;s BPM (step-by-step)</h1>
+  <p class="lead">You do not need a DAW, an account, or an upload to find a song&rsquo;s tempo. You need a clean section of audio, a detector you trust, and one habit: check half-time and double-time before you write the number down.</p>
+  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="2026-10-20">Updated 2026-10-20</time> &middot; 8 min read &middot; <span class="tag">tempo</span><span class="tag">workflow</span><span class="tag">beginners</span></p>
+  <div class="cta-row">
+    <a class="btn primary" href="/app.html">Open free BPM tool</a>
+    <a class="btn" href="/guides.html">All guides</a>
   </div>
+</section>
+<main>
 
-  <main>
-    <article class="card">
-      <h2>1. Choose a clear section of the track</h2>
-      <p>Pick 20–40 seconds with a steady pulse. Intros with only pads and no kick often confuse automatic detectors. Verses or drop sections with drums usually work better.</p>
-      <h2>2. Prefer a clean file when you can</h2>
-      <p>Streaming rips with heavy compression still work, but a short WAV export from your DAW is ideal. If the browser fails to decode a format, convert a clip to 16-bit WAV and try again.</p>
-      <h2>3. Run automatic detection</h2>
-      <p>On <a href="/app.html">BPMfinder’s free tool</a>, drop the file and wait for BPM and confidence. High confidence on electronic music is common. Live jazz or free-time sections may score lower — that is normal.</p>
-      <h2>4. Check half and double</h2>
-      <p>If the number feels twice as fast or half as slow as your body wants to move, use half/double. Your counting convention should match the software or dancers you work with.</p>
-      <h2>5. Confirm with tap tempo</h2>
-      <p>Tap along for eight bars. Average the taps. If tap and automatic disagree by more than a few BPM, trust the feel for performance and re-check a cleaner section for production.</p>
-      <h2>6. Write the number where you will see it</h2>
-      <p>Put BPM in the filename, playlist notes, or session template. Tempo only helps if you can find it again under pressure.</p>
-    </article>
-    <article class="card">
-      <h2>Common mistakes</h2>
-      <ul>
-        <li>Analyzing a 3-second clip with no drums</li>
-        <li>Assuming every track has one “true” BPM with no half-time option</li>
-        <li>Ignoring swing and human timing on live recordings</li>
-        <li>Trusting a single detector without listening</li>
-      </ul>
-      <p>Next: <a href="/tap-tempo-guide.html">Tap tempo guide</a> · <a href="/bpm-for-djs.html">BPM for DJs</a></p>
-    </article>
-  </main>
+<article class="card">
+  <h2>1. What BPM actually measures</h2>
+  <p>Beats per minute is a count, not a genre. At 120 BPM, four beats pass every two seconds, so one beat lasts 500 milliseconds. At 90 BPM, a beat lasts about 667 milliseconds. That number is useful because it tells a DAW where to put the grid, tells a DJ how much pitch correction a blend needs, and tells a dancer how fast the pulse is.</p>
+  <p>It does not tell you how the track feels. A 70 BPM trap record and a 140 BPM house record can share a pulse; the difference is where the snare lands and how the subdivisions are played. This is why two people can disagree about the &ldquo;real&rdquo; BPM of the same song and both be counting correctly. Pick a convention, write it down, and stay consistent across your project.</p>
+  <h2>2. Before you analyze: choose the right section</h2>
+  <p>Most bad BPM readings are caused by a bad input, not a bad detector.</p>
+  <ul>
+    <li><strong>Use 20&ndash;40 seconds with a steady pulse.</strong> A verse, a drop, or a chorus with drums is ideal.</li>
+    <li><strong>Avoid intros, outros, and breakdowns.</strong> Pads, risers, and spoken intros give the detector very little to lock onto.</li>
+    <li><strong>Use a file you own.</strong> MP3, WAV, and FLAC work in modern browsers. Streaming-service files are usually protected, so export or record a clip you have the rights to use.</li>
+    <li><strong>Do not use a clip shorter than about ten seconds.</strong> There are not enough repetitions for a stable estimate.</li>
+  </ul>
+  <p>If the song changes tempo, analyze the section you will actually use. A single BPM for a track with a ritardando or a half-time bridge is a fiction; note the tempo of each section instead.</p>
+</article>
+<div class="ad-slot" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<article class="card">
+  <h2>3. Run the detector and read the confidence</h2>
+  <p>Open the <a href="/app.html">free BPM tool</a>, drop the file, and wait for the result. The tool analyzes the audio in your browser; it does not require an account, and the file is not uploaded to a server for tempo detection.</p>
+  <p>You will get two numbers: BPM and a confidence score. Treat confidence as a hint, not a grade. A high score on a four-on-the-floor house track is normal. A lower score on live jazz, a rubato piano intro, or a field recording is also normal. The question is not &ldquo;is the score high?&rdquo; but &ldquo;does the number match the pulse I hear?&rdquo; Play the track and count along for eight bars. If your count and the detector agree, move on. If they do not, do the next step before you touch the project tempo.</p>
+<figure class="figure">
+  <img src="/assets/screenshots/bpm-result-128.png" alt="BPMfinder showing 128.0 BPM and full confidence for a 128 BPM click track" width="600" height="640" loading="lazy">
+  <figcaption>The tool reporting 128.0 BPM and full confidence for a generated click track. The confidence bar reflects how tightly the detected beats cluster, not whether the count matches your ear. Screenshot: BPMfinder.ca.</figcaption>
+</figure>
+  <h2>4. Check half-time and double-time before you trust it</h2>
+  <p>Half-time and double-time are the most common source of wrong BPM values, and the easiest to fix. A track that feels like 70 BPM may be counted at 140. A drum-and-bass tune at 174 may feel like 87 if you only follow the kick. A boom-bap loop at 90 may read as 180 if the detector locks to the hi-hats. None of those readings is &ldquo;broken&rdquo; &mdash; they are different counting levels of the same pulse.</p>
+  <p>Ask yourself: <strong>where do the snare and the main backbeat land?</strong> If the snare hits on beats two and four of a slow count, the slow number is usually the useful one. If the energy is carried by fast subdivisions, the double may be the better session tempo. Write down which convention you chose. Changing it later is cheap; discovering it after you have tracked eight bars is not. The <a href="/half-time-double-time.html">half-time and double-time guide</a> goes deeper, and the <a href="/bpm-for-djs.html">BPM for DJs guide</a> covers beatmatching.</p>
+  <h2>5. Confirm with tap tempo</h2>
+  <p>Tap tempo is the simplest sanity check ever invented. Tap along with the track for eight bars &mdash; not two, not four. Eight bars gives you enough taps to average out a nervous finger. Compare the average with the detector. If they are within a BPM or two, you are done. If they are far apart, go back to a cleaner section and repeat both steps.</p>
+  <p>Do not tap the hi-hat if you want the song&rsquo;s main tempo. Tap the pulse you would clap to. That is the number a drummer, a DJ, or a DAW grid will agree with.</p>
+</article>
+<article class="card">
+  <h2>6. When automatic detection fails</h2>
+  <p>Some material is genuinely hard, and no detector should pretend otherwise.</p>
+  <ul>
+    <li><strong>Rubato and live drums.</strong> Tempo breathes. A single number may be wrong for half the track. Note a range, or analyze a steady section.</li>
+    <li><strong>Ambient, drone, and spoken word.</strong> There may be no stable beat to find. A low confidence score is the honest answer.</li>
+    <li><strong>Short clips and fades.</strong> The detector needs repetition; a five-second intro may not contain enough.</li>
+    <li><strong>Heavily compressed or clipped audio.</strong> Transients get smeared, and the detector may lock onto the wrong pulse. A cleaner export usually fixes it.</li>
+    <li><strong>Tempo changes.</strong> Analyze each section separately. Do not average a 90 BPM verse and a 140 BPM drop into one meaningless number.</li>
+  </ul>
+  <p>If the result still feels wrong, trust your ears and use tap tempo. The tool is a second opinion, not a judge. Our <a href="/bpm-detection-accuracy.html">measured accuracy test</a> shows where the detector is strong and where it is not.</p>
+  <h2>7. Record the result where you will use it</h2>
+  <p>A BPM you cannot find again is a BPM you will re-detect. Put it where the work happens:</p>
+  <ul>
+    <li>In the DAW session tempo, before you record MIDI or loop-based audio.</li>
+    <li>In the filename or the playlist notes, especially for a DJ set.</li>
+    <li>In the track metadata or a simple session note, with the half/double convention you chose.</li>
+    <li>In the arrangement notes if the song changes tempo.</li>
+  </ul>
+  <p>For a DJ set, BPM belongs next to key and energy, not in a separate spreadsheet you will forget to open. For a production session, it belongs in the project template so every collaborator starts on the same grid.</p>
+  <h2>Common mistakes</h2>
+  <ul>
+    <li>Analyzing a three-second clip with no drums.</li>
+    <li>Assuming every track has one &ldquo;true&rdquo; BPM with no half-time option.</li>
+    <li>Ignoring swing and human timing on live recordings.</li>
+    <li>Trusting a single detector pass without listening.</li>
+    <li>Writing the number down without noting which count you used.</li>
+  </ul>
+  <h2>8. A five-minute workflow</h2>
+  <ol>
+    <li>Pick a 20&ndash;40 second section with steady drums.</li>
+    <li>Drop it into the <a href="/app.html">BPM tool</a>.</li>
+    <li>Read BPM and confidence.</li>
+    <li>Check half-time and double-time against the snare.</li>
+    <li>Tap eight bars and compare.</li>
+    <li>Write the number and the counting convention where you will use it.</li>
+  </ol>
+  <p>That is the whole job. The rest is practice.</p>
+</article>
+<article class="card faq">
+  <h2>FAQ</h2>
+  <h3>Why does the tool say 140 when the song feels like 70?</h3>
+  <p>Both can be correct. The detector may be counting double-time subdivisions. Check where the snare and backbeat land, then choose the count that matches how you will use the tempo.</p>
+  <h3>What is a good confidence score?</h3>
+  <p>There is no universal threshold. High confidence on a clear electronic beat is expected; lower confidence on live, rubato, or ambient material is normal. Use the score to decide whether to double-check, not to decide whether the result is &ldquo;allowed.&rdquo;</p>
+  <h3>Does the tool upload my audio?</h3>
+  <p>No. The analysis runs in your browser. The <a href="/privacy.html">privacy policy</a> explains what the hosting and advertising layers may log.</p>
+  <h3>Can I find BPM from a Spotify or Apple Music link?</h3>
+  <p>Not reliably. Streaming files are usually protected. Use a file you own or a short clip you have the rights to use.</p>
+  <h3>What formats work?</h3>
+  <p>MP3, WAV, and FLAC in current browsers. If a file will not decode, export a short 16-bit WAV clip and try again.</p>
+  <h3>What if the song changes tempo?</h3>
+  <p>Analyze each section separately and write down the tempo for each. A single number is only useful if the pulse is stable.</p>
+</article>
+<div class="related"><h2>Related guides</h2><ul><li><a href="/tap-tempo-guide.html">Tap tempo guide</a></li><li><a href="/bpm-for-djs.html">BPM for DJs</a></li><li><a href="/delay-times-from-bpm.html">Delay times from BPM</a></li></ul></div>
+<article class="card">
+  <h2>Practice listening</h2>
+  <p>If you want something to test the workflow on, the free player at <a href="https://asiancoastline.com/">asiancoastline.com</a> streams the Excavationpro catalog without an account. Pick a track, run the BPM check, then listen for where the snare actually lands.</p>
+</article>
+<div class="author-box">
+  <strong>Justin Helmer</strong> publishes BPMfinder.ca and records as
+  <a href="https://excavationpro.ca/">Excavationpro</a>. He writes about tempo, music tools, and the
+  practical side of making records without a label. <a href="/about.html">About the site</a>.
+</div>
 
+</main>
 </div>
 <footer class="site">
   <div class="wrap">
@@ -131,10 +180,17 @@ table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-s
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
-    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
+    <p>&copy; 2026 Justin Helmer &middot; BPMfinder.ca &mdash; free educational BPM guides and a free private browser tempo tool.
     Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
   </div>
 </footer>
-
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js"></script>
 </body>
 </html>

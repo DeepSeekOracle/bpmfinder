@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en" data-cookie-key="bpmfinder_cookies">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>How Accurate Is Browser BPM Detection? Tested | BPMfinder.ca</title>
+<meta name="description" content="A measured accuracy test of the BPMfinder browser detector: 21 generated click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.">
+<meta name="author" content="Justin Helmer">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
+<link rel="canonical" href="https://bpmfinder.ca/bpm-detection-accuracy.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site-kit.css">
+<link rel="stylesheet" href="/assets/article.css">
+<meta name="google-adsense-account" content="ca-pub-0646320966060599">
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://bpmfinder.ca/bpm-detection-accuracy.html">
+<meta property="og:title" content="How Accurate Is Browser BPM Detection? Tested | BPMfinder.ca">
+<meta property="og:description" content="A measured accuracy test of the BPMfinder browser detector: 21 generated click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.">
+<meta property="og:site_name" content="BPMfinder.ca">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
+<meta name="twitter:title" content="How Accurate Is Browser BPM Detection? Tested | BPMfinder.ca">
+<meta name="twitter:description" content="A measured accuracy test of the BPMfinder browser detector: 21 generated click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta name="twitter:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="theme-color" content="#f6f5f2">
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bpmfinder.ca/#website", "url": "https://bpmfinder.ca/", "name": "BPMfinder.ca", "description": "Free browser BPM tool and original tempo guides.", "publisher": {"@id": "https://bpmfinder.ca/#organization"}}, {"@type": "Organization", "@id": "https://bpmfinder.ca/#organization", "name": "BPMfinder.ca", "url": "https://bpmfinder.ca/", "email": "excavationstation@gmail.com", "founder": {"@type": "Person", "name": "Justin Helmer"}}, {"@type": "Article", "@id": "https://bpmfinder.ca/bpm-detection-accuracy.html#article", "headline": "How accurate is browser BPM detection?", "description": "A measured accuracy test of the BPMfinder browser detector: 21 generated click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.", "url": "https://bpmfinder.ca/bpm-detection-accuracy.html", "mainEntityOfPage": {"@id": "https://bpmfinder.ca/bpm-detection-accuracy.html#webpage"}, "author": {"@type": "Person", "name": "Justin Helmer", "url": "https://excavationpro.ca/"}, "publisher": {"@id": "https://bpmfinder.ca/#organization"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "image": "https://bpmfinder.ca/assets/og-home.jpg"}, {"@type": "WebPage", "@id": "https://bpmfinder.ca/bpm-detection-accuracy.html#webpage", "url": "https://bpmfinder.ca/bpm-detection-accuracy.html", "name": "How accurate is browser BPM detection?", "description": "A measured accuracy test of the BPMfinder browser detector: 21 generated click tracks at 60-180 BPM, including noise and offbeat variants, with real results and limits.", "isPartOf": {"@id": "https://bpmfinder.ca/#website"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Is browser BPM detection accurate?", "acceptedAnswer": {"@type": "Answer", "text": "For steady electronic material in the 90-174 BPM range, our test was exact on every clean file. Real music and extreme tempos are harder."}}, {"@type": "Question", "name": "Why did 70 BPM return 140?", "acceptedAnswer": {"@type": "Answer", "text": "The detector counted double-time subdivisions. The pulse is related; the counting level is different."}}, {"@type": "Question", "name": "Why did 60 BPM fail?", "acceptedAnswer": {"@type": "Answer", "text": "It produced no result within 30 seconds in our test. Very slow material may need a longer clip or tap tempo."}}, {"@type": "Question", "name": "Can I trust the confidence score?", "acceptedAnswer": {"@type": "Answer", "text": "Use it as a hint. High confidence is expected on a clear beat; low confidence is a signal to double-check."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bpmfinder.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bpmfinder.ca/guides.html"}, {"@type": "ListItem", "position": 3, "name": "How accurate is browser BPM detection?", "item": "https://bpmfinder.ca/bpm-detection-accuracy.html"}]}]}</script>
+</head>
+<body>
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="/">BPMfinder.ca</a>
+    <nav class="navlinks" aria-label="Primary">
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<div class="wrap">
+<section class="hero">
+  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / How accurate is browser BPM detection?</p>
+  <h1>How accurate is browser BPM detection?</h1>
+  <p class="lead">We generated click tracks at known tempos, ran them through the actual BPMfinder tool, and recorded what came back. The result is useful precisely because it is not always perfect.</p>
+  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="2026-10-20">Updated 2026-10-20</time> &middot; 7 min read &middot; <span class="tag">accuracy</span><span class="tag">testing</span><span class="tag">method</span></p>
+  <div class="cta-row">
+    <a class="btn primary" href="/app.html">Open free BPM tool</a>
+    <a class="btn" href="/guides.html">All guides</a>
+  </div>
+</section>
+<main>
+
+<article class="card">
+  <h2>What “accuracy” means here</h2>
+  <p>Tempo detection is an estimate. A useful test asks two questions: does the tool return the tempo you put in, and when it does not, is the error a musically sensible half-time or double-time count? We tested the second question as carefully as the first.</p>
+  <p>This is a synthetic test, not a survey of real records. Click tracks are easier than music: they have clean transients, no vocals, no reverb, and no arrangement changes. Treat these numbers as a best case, not a promise about every MP3.</p>
+  <h2>Method</h2>
+  <ol>
+    <li>Generate 30-second mono WAV click tracks at 60, 70, 80, 90, 100, 110, 120, 128, 140, 150, 160, 174, and 180 BPM.</li>
+    <li>Create four noise variants (90, 120, 140, 174 BPM) and four offbeat variants with an added offbeat click.</li>
+    <li>Load each file into the live <a href="/app.html">BPMfinder tool</a> in Chrome, one at a time.</li>
+    <li>Record the returned BPM and the confidence meter. A result was counted as exact only if it matched the input within 0.5 BPM.</li>
+  </ol>
+</article>
+<div class="ad-slot" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<article class="card">
+  <h2>Results</h2>
+  <div class="table-wrap"><table class="simple">
+    <thead><tr><th>Input BPM</th><th>Clean</th><th>Noise</th><th>Offbeat</th></tr></thead>
+    <tbody>
+      <tr><td>60</td><td>no result in 30 s</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>70</td><td>140 (double)</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>80</td><td>160 (double)</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>90</td><td>90</td><td>90</td><td>90</td></tr>
+      <tr><td>100</td><td>100</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>110</td><td>110</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>120</td><td>120</td><td>120</td><td>120</td></tr>
+      <tr><td>128</td><td>128</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>140</td><td>140</td><td>140</td><td>140</td></tr>
+      <tr><td>150</td><td>150</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>160</td><td>160</td><td>&mdash;</td><td>&mdash;</td></tr>
+      <tr><td>174</td><td>174</td><td>174</td><td>174</td></tr>
+      <tr><td>180</td><td>90 (half)</td><td>&mdash;</td><td>&mdash;</td></tr>
+    </tbody>
+  </table></div>
+  <p><strong>17 of 21 files returned the exact tempo.</strong> Three returned a musically related half or double (70 &rarr; 140, 80 &rarr; 160, 180 &rarr; 90). One file, at 60 BPM, produced no result within the 30-second window.</p>
+  <h2>What the results mean</h2>
+  <p>In the 90&ndash;174 BPM range, the detector was exact on every clean file and every noise or offbeat variant we tested. That is the range most electronic music, DJ tools, and practice tracks live in. The errors clustered at the slow and fast extremes, where the detector chose a different counting level rather than a random number.</p>
+  <p>The 60 BPM timeout is the one result we would not gloss over. A 30-second click track at 60 BPM contains only 30 beats; the tool may need a longer file, a clearer transient, or a different input to return a value. For very slow material, use tap tempo as the primary check and treat the detector as a second opinion.</p>
+  <h2>Limits and what we did not test</h2>
+  <ul>
+    <li>We did not test real commercial recordings, vocals, live drums, or rubato performances.</li>
+    <li>We did not test every browser or every audio codec; the test ran in Chrome with WAV files.</li>
+    <li>We did not measure speed or CPU use; the focus was the returned tempo.</li>
+    <li>A synthetic click track is a best case. Real music will produce more errors, especially at tempo changes.</li>
+  </ul>
+  <h2>How to reproduce it</h2>
+  <p>Generate a click track at a known BPM, load it into the <a href="/app.html">tool</a>, and compare the returned value with the input. If you get a half or double, check the snare and the main pulse before assuming the tool is wrong.</p>
+</article>
+<article class="card faq">
+  <h2>FAQ</h2>
+  <h3>Is browser BPM detection accurate?</h3>
+  <p>For steady electronic material in the 90&ndash;174 BPM range, our test was exact on every clean file. Real music and extreme tempos are harder.</p>
+  <h3>Why did 70 BPM return 140?</h3>
+  <p>The detector counted double-time subdivisions. The pulse is related; the counting level is different.</p>
+  <h3>Why did 60 BPM fail?</h3>
+  <p>It produced no result within 30 seconds in our test. Very slow material may need a longer clip or tap tempo.</p>
+  <h3>Can I trust the confidence score?</h3>
+  <p>Use it as a hint. High confidence on a clear beat is expected; low confidence is a signal to double-check, not a verdict.</p>
+</article>
+<article class="card">
+  <h2>What the confidence meter did</h2>
+  <p>Most exact results displayed 100% confidence on the meter, including the noise and offbeat variants. The 70 BPM file that returned 140 displayed 40%. But the 80 BPM file that returned 160 and the 180 BPM file that returned 90 both displayed 100%. That is the important lesson: <strong>confidence measures how tightly the detected beats cluster, not whether the count matches your intention.</strong></p>
+  <p>A high score means the detector found a consistent pulse. It does not mean the pulse is the one you would clap to. Always check the snare and the main backbeat before trusting a high-confidence half or double.</p>
+  <h2>Why a synthetic test still matters</h2>
+  <p>It isolates the detector from the variables that make real music hard: vocals, reverb, arrangement changes, live timing, and codec artifacts. If the tool cannot handle a clean click track at a given tempo, that is a baseline fact worth knowing. If it handles the click track but fails on a real record, the problem is likely the material, not the arithmetic.</p>
+  <p>We will keep this page updated if the detector changes. The method is simple enough to repeat: generate a click track at a known BPM, load it into the <a href="/app.html">tool</a>, and compare. If you run the test and get a different result, send it in &mdash; a reproducible disagreement is more useful than a review.</p>
+  <h2>What would make this test stronger</h2>
+  <ul>
+    <li>A set of licensed real recordings with known tempo annotations.</li>
+    <li>Live drum performances with and without a click.</li>
+    <li>Multiple browsers and codecs (MP3, AAC, FLAC, WAV).</li>
+    <li>A measurement of detection time, not just the returned number.</li>
+  </ul>
+  <p>Those are future work, not claims. The table above is what we actually measured today.</p>
+</article>
+<div class="related"><h2>Related guides</h2><ul><li><a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a></li><li><a href="/tap-tempo-guide.html">Tap tempo guide</a></li><li><a href="/bpm-for-djs.html">BPM for DJs</a></li></ul></div>
+<div class="author-box">
+  <strong>Justin Helmer</strong> publishes BPMfinder.ca and records as
+  <a href="https://excavationpro.ca/">Excavationpro</a>. He writes about tempo, music tools, and the
+  practical side of making records without a label. <a href="/about.html">About the site</a>.
+</div>
+
+</main>
+</div>
+<footer class="site">
+  <div class="wrap">
+    <nav aria-label="Footer">
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html">Guides</a>
+      <a href="/how-to-find-bpm.html">How to find BPM</a>
+      <a href="/bpm-for-djs.html">BPM for DJs</a>
+      <a href="/tap-tempo-guide.html">Tap tempo</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="/terms.html">Terms</a>
+    </nav>
+    <p>&copy; 2026 Justin Helmer &middot; BPMfinder.ca &mdash; free educational BPM guides and a free private browser tempo tool.
+    Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
+  </div>
+</footer>
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js"></script>
+</body>
+</html>

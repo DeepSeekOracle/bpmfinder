@@ -1,121 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cookie-key="bpmfinder_cookies">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BPM for DJs — Beatmatching, Setlists, and Tempo Notes | BPMfinder.ca</title>
-<meta name="description" content="Practical BPM advice for DJs: beatmatching neighborhoods, half-time traps, and setlist planning with free tempo tools.">
+<title>BPM for DJs: Beatmatching, Phrasing & Set Planning | BPMfinder.ca</title>
+<meta name="description" content="How working DJs use BPM for beatmatching, phrasing, and set energy, with pitch-fader math, genre ranges, and a 20-minute practice drill.">
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/bpm-for-djs.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site-kit.css">
+<link rel="stylesheet" href="/assets/article.css">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://bpmfinder.ca/bpm-for-djs.html">
-<meta property="og:title" content="BPM for DJs — Beatmatching, Setlists, and Tempo Notes | BPMfinder.ca">
-<meta property="og:description" content="Practical BPM advice for DJs: beatmatching neighborhoods, half-time traps, and setlist planning with free tempo tools.">
+<meta property="og:title" content="BPM for DJs: Beatmatching, Phrasing &amp; Set Planning | BPMfinder.ca">
+<meta property="og:description" content="How working DJs use BPM for beatmatching, phrasing, and set energy, with pitch-fader math, genre ranges, and a 20-minute practice drill.">
 <meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
+<meta name="twitter:title" content="BPM for DJs: Beatmatching, Phrasing &amp; Set Planning | BPMfinder.ca">
+<meta name="twitter:description" content="How working DJs use BPM for beatmatching, phrasing, and set energy, with pitch-fader math, genre ranges, and a 20-minute practice drill.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta name="twitter:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
 <meta name="theme-color" content="#f6f5f2">
-<style>
-:root {
-  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
-  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
-  background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line);
-  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
-.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
-.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
-.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
-  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
-  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
-.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
-.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
-.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
-  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
-.grid2 { display: grid; gap: .9rem; }
-@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
-.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
-  border-radius: 10px; text-decoration: none; color: inherit; }
-.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
-.tile span { color: var(--muted); font-size: .92rem; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
-  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
-ul, ol { padding-left: 1.2rem; }
-table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
-table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
-table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
-</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bpmfinder.ca/#website", "url": "https://bpmfinder.ca/", "name": "BPMfinder.ca", "description": "Free browser BPM tool and original tempo guides.", "publisher": {"@id": "https://bpmfinder.ca/#organization"}}, {"@type": "Organization", "@id": "https://bpmfinder.ca/#organization", "name": "BPMfinder.ca", "url": "https://bpmfinder.ca/", "email": "excavationstation@gmail.com", "founder": {"@type": "Person", "name": "Justin Helmer"}}, {"@type": "Article", "@id": "https://bpmfinder.ca/bpm-for-djs.html#article", "headline": "BPM for DJs: beatmatching, phrasing, and set planning", "description": "How working DJs use BPM for beatmatching, phrasing, and set energy, with pitch-fader math, genre ranges, and a 20-minute practice drill.", "url": "https://bpmfinder.ca/bpm-for-djs.html", "mainEntityOfPage": {"@id": "https://bpmfinder.ca/bpm-for-djs.html#webpage"}, "author": {"@type": "Person", "name": "Justin Helmer", "url": "https://excavationpro.ca/"}, "publisher": {"@id": "https://bpmfinder.ca/#organization"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "image": "https://bpmfinder.ca/assets/og-home.jpg"}, {"@type": "WebPage", "@id": "https://bpmfinder.ca/bpm-for-djs.html#webpage", "url": "https://bpmfinder.ca/bpm-for-djs.html", "name": "BPM for DJs: beatmatching, phrasing, and set planning", "description": "How working DJs use BPM for beatmatching, phrasing, and set energy, with pitch-fader math, genre ranges, and a 20-minute practice drill.", "isPartOf": {"@id": "https://bpmfinder.ca/#website"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Should I beatmatch by ear or by BPM?", "acceptedAnswer": {"@type": "Answer", "text": "Both. BPM tells you where to start; your ears tell you whether the blend locks."}}, {"@type": "Question", "name": "Is a 6% pitch range enough?", "acceptedAnswer": {"@type": "Answer", "text": "For most house and techno, yes. A 6% range covers 120-128 with room to spare."}}, {"@type": "Question", "name": "Why do some tracks sound faster than their BPM?", "acceptedAnswer": {"@type": "Answer", "text": "Subdivision density, vocal energy, and arrangement matter. Plan energy separately from tempo."}}, {"@type": "Question", "name": "What about harmonic mixing?", "acceptedAnswer": {"@type": "Answer", "text": "Key is a separate axis from BPM. Use a key tag alongside tempo and do not force a clash."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bpmfinder.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bpmfinder.ca/guides.html"}, {"@type": "ListItem", "position": 3, "name": "BPM for DJs: beatmatching, phrasing, and set planning", "item": "https://bpmfinder.ca/bpm-for-djs.html"}]}]}</script>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">BPMfinder.ca</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html">Guides</a> <a href="/how-to-find-bpm.html">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
+
 <div class="wrap">
-
-  <section class="hero">
-    <h1>BPM for DJs — beatmatching and setlist planning</h1>
-    <p class="lead">Tempo is a planning tool, not a personality test. Use it to build smoother transitions.</p>
-    <div class="cta-row"><a class="btn primary" href="/app.html">Detect track BPM free</a></div>
-  </section>
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<section class="hero">
+  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / BPM for DJs: beatmatching, phrasing, and set planning</p>
+  <h1>BPM for DJs: beatmatching, phrasing, and set planning</h1>
+  <p class="lead">BPM is not a genre label and it is not a score. It is a planning number: how much pitch correction a blend needs, where a phrase starts, and how the energy moves across a set.</p>
+  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="2026-10-20">Updated 2026-10-20</time> &middot; 7 min read &middot; <span class="tag">DJ</span><span class="tag">beatmatching</span><span class="tag">set planning</span></p>
+  <div class="cta-row">
+    <a class="btn primary" href="/app.html">Open free BPM tool</a>
+    <a class="btn" href="/guides.html">All guides</a>
   </div>
+</section>
+<main>
 
-  <main>
-    <article class="card">
-      <h2>Why DJs care about BPM</h2>
-      <p>
-        Knowing approximate BPM helps you order a set, plan energy arcs, and decide whether a transition needs a long
-        blend or a quick cut. It does not replace listening — it reduces surprises when the dancefloor is already moving.
-      </p>
-      <h2>A simple setlist method</h2>
-      <ol>
-        <li>Analyze each candidate track with a free tool or your library software.</li>
-        <li>Group songs into ±3–5 BPM neighborhoods when possible.</li>
-        <li>Mark half-time/double-time conventions so 87 and 174 are not mixed up.</li>
-        <li>Leave intentional jumps for energy — just plan them.</li>
-      </ol>
-      <h2>Live vs prep</h2>
-      <p>
-        Prep is for map-making. Live is for reading the room. If a prepared BPM is wrong, trust the floor and re-tap.
-        Free tools like BPMfinder are useful at home; on stage, practice quick tap tempo recovery.
-      </p>
-      <h2>Confidence ranges</h2>
-      <p>
-        Treat automatic BPM as a hypothesis. High confidence on club music is usually reliable. Low confidence means
-        verify. See also <a href="/how-to-find-bpm.html">how to find BPM</a>.
-      </p>
-    </article>
-  </main>
+<article class="card">
+  <h2>Why DJs care about BPM</h2>
+  <p>Two records can only blend cleanly when their pulses agree. If one is at 124 BPM and the other at 128, you either move one with the pitch fader or you find a transition that does not require a sustained blend. Knowing the numbers before you load the next track turns a guess into a decision.</p>
+  <p>BPM also shapes the emotional arc of a set. A warm-up at 118&ndash;122 feels different from a peak-time run at 128&ndash;134, even when the records share a genre. The number is not the energy, but it is one of the levers that controls it.</p>
+  <h2>The pitch-fader math</h2>
+  <p>Pitch correction is a percentage, not a BPM difference. To move a track from its original tempo to a target tempo:</p>
+  <p><strong>percent change = ((target / original) &minus; 1) &times; 100</strong></p>
+  <ul>
+    <li>124 &rarr; 128 BPM: <strong>+3.2%</strong></li>
+    <li>128 &rarr; 124 BPM: <strong>&minus;3.1%</strong></li>
+    <li>120 &rarr; 126 BPM: <strong>+5.0%</strong></li>
+    <li>174 &rarr; 87 BPM: <strong>&minus;50%</strong> (a half-time blend, not a small nudge)</li>
+  </ul>
+  <p>On a CDJ or controller, a 6% range is often enough for house and techno. A 10% or 16% range gives more room but can make vocals sound unnatural. If the correction is large, consider a half-time or double-time transition instead of forcing the pitch.</p>
+</article>
+<div class="ad-slot" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<article class="card">
+  <h2>Phrasing: where the blend actually lands</h2>
+  <p>Most dance music is built in 8-bar and 16-bar phrases. A blend that starts in the middle of a phrase can sound like two songs colliding even when the BPM is perfect. Count from a clear downbeat, then start the incoming track on a phrase boundary &mdash; usually the first beat of an 8 or 16-bar block.</p>
+  <p>A practical habit: cue the incoming track four bars before the phrase you want, then bring it in on the downbeat. If the outgoing track has a breakdown, use that space to swap the low end rather than layering two kicks.</p>
+  <h2>Set energy is not the same as BPM</h2>
+  <p>A 128 BPM record with a sparse arrangement can feel calmer than a 122 BPM record with a busy vocal and a hard kick. Plan the set with three columns: BPM, key, and energy. Move one variable at a time. If you jump 10 BPM and 10 energy points at once, the room feels the jump even if the blend is technically clean.</p>
+  <h2>Common tempo ranges</h2>
+  <p>These are conventions, not rules. Use them as a starting point, then trust the record.</p>
+  <div class="table-wrap"><table class="simple">
+    <thead><tr><th>Style</th><th>Typical BPM</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr><td>Hip-hop / boom-bap</td><td>70&ndash;100</td><td>Often counted at double time for DJ tools</td></tr>
+      <tr><td>House</td><td>118&ndash;128</td><td>Deep house sits lower; tech house sits higher</td></tr>
+      <tr><td>Techno</td><td>125&ndash;150</td><td>Hard techno can push beyond 150</td></tr>
+      <tr><td>Disco / funk</td><td>110&ndash;125</td><td>Live drums may drift a few BPM</td></tr>
+      <tr><td>Drum &amp; bass</td><td>160&ndash;180</td><td>Often felt as half-time at 80&ndash;90</td></tr>
+      <tr><td>Dubstep / halftime</td><td>140 (felt at 70)</td><td>The half-time count is the useful one</td></tr>
+    </tbody>
+  </table></div>
+  <h2>A simple setlist method</h2>
+  <p>Write three columns: BPM, key, and energy. Sort by energy first, then by BPM inside each block. A set that moves from 120 to 126 across ten tracks feels like a build; a set that jumps 120, 128, 122, 130 feels restless even when every individual blend is clean.</p>
+  <p>Leave one or two slots open. The room will tell you whether the next block should be faster or deeper, and a fixed list with no room for that decision is a playlist, not a set.</p>
+  <h2>A 20-minute practice drill</h2>
+  <ol>
+    <li>Pick five tracks between 120 and 128 BPM.</li>
+    <li>Write the BPM and key of each one before you load it.</li>
+    <li>Blend two tracks using only the pitch fader; note the percentage.</li>
+    <li>Repeat with a 4-bar blend, then an 8-bar blend.</li>
+    <li>Finish with one half-time transition (for example 174 &rarr; 87).</li>
+  </ol>
+  <p>The goal is not a perfect mix. It is knowing what a 3% correction sounds like before the room is full.</p>
+</article>
+<article class="card faq">
+  <h2>FAQ</h2>
+  <h3>Should I beatmatch by ear or by BPM?</h3>
+  <p>Both. BPM tells you where to start; your ears tell you whether the blend actually locks. Use the number to narrow the search, then trust the transient.</p>
+  <h3>Is a 6% pitch range enough?</h3>
+  <p>For most house and techno, yes. If you regularly move between 120 and 128, a 6% range covers it with room to spare. Larger jumps need a different transition or a wider range.</p>
+  <h3>Why do some tracks sound faster than their BPM?</h3>
+  <p>Subdivision density, vocal energy, and arrangement matter. A busy 124 can feel faster than a sparse 130. Plan energy separately from tempo.</p>
+  <h3>What about harmonic mixing?</h3>
+  <p>Key matters, but it is a separate axis from BPM. Use a key tag or Camelot notation alongside the tempo, and do not force a blend that clashes harmonically just because the BPM matches.</p>
+</article>
+<article class="card">
+  <h2>Live vs preparation</h2>
+  <p>Preparation is where BPM earns its keep: tagging, cue points, phrase marks, and a set arc. Live, the number should recede. If you are staring at a BPM readout while the room is moving, you are using the tool too late. Know the range of the next three tracks, then listen.</p>
+  <p>Confidence ranges help here. A track you have tested at 124&ndash;126 can take a small nudge; a track with a live drummer and a drifting tempo should be left alone or blended at a phrase boundary. Write the range, not a false decimal.</p>
+</article>
+<article class="card">
+  <h2>Preparing a set file before the gig</h2>
+  <p>A BPM column is only useful if the rest of the file is ready. Before a set, export a simple list with four fields: title, BPM, key, and a one-line energy note. The note can be as short as &ldquo;warm-up&rdquo;, &ldquo;vocal peak&rdquo;, or &ldquo;close&rdquo;. When you are loading tracks in a dark room, that line is faster to read than a waveform.</p>
+  <p>Set cue points at the first downbeat and at the start of the phrase you plan to mix. If a track has a long intro, cue the first useful bar rather than the first sound. If it has a cold start, mark the drop. The goal is to remove decisions from the moment when you are already listening to the room.</p>
+  <p>Check the gain before the set, not during it. A track that is 3 dB louder than the rest will feel like an energy jump even if the BPM is identical. Match loudness in rehearsal, then use the energy note for the arrangement.</p>
+  <h2>Three-deck thinking</h2>
+  <p>With three decks, BPM becomes a scheduling problem. You can hold a steady pulse on one deck, bring a second in for a phrase, and use the third for a short vocal or percussion layer. Write the BPM of every layer, not just the main track. A 128 BPM loop against a 124 BPM track is a 3.2% correction; against a 140 BPM track it is a different transition entirely.</p>
+  <p>If you use sync, the BPM number still matters because it tells you whether the sync result is plausible. A synced 87 against a 174 track is a half-time relationship, not an error. A synced 174 against a 128 track is a jump; decide whether that is the effect you want.</p>
+</article>
+<div class="related"><h2>Related guides</h2><ul><li><a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a></li><li><a href="/half-time-double-time.html">Half-time and double-time</a></li><li><a href="/delay-times-from-bpm.html">Delay times from BPM</a></li></ul></div>
+<div class="author-box">
+  <strong>Justin Helmer</strong> publishes BPMfinder.ca and records as
+  <a href="https://excavationpro.ca/">Excavationpro</a>. He writes about tempo, music tools, and the
+  practical side of making records without a label. <a href="/about.html">About the site</a>.
+</div>
 
+</main>
 </div>
 <footer class="site">
   <div class="wrap">
@@ -131,10 +165,17 @@ table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-s
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
-    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
+    <p>&copy; 2026 Justin Helmer &middot; BPMfinder.ca &mdash; free educational BPM guides and a free private browser tempo tool.
     Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
   </div>
 </footer>
-
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js"></script>
 </body>
 </html>

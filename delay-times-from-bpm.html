@@ -1,127 +1,155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cookie-key="bpmfinder_cookies">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Delay Times from BPM — Convert Tempo to Milliseconds | BPMfinder.ca</title>
-<meta name="description" content="Convert BPM to delay times in milliseconds: quarter, eighth, sixteenth, dotted, and triplet note lengths for producers.">
+<title>Delay Times from BPM: Note-Value Chart & Formula | BPMfinder.ca</title>
+<meta name="description" content="Convert BPM to delay and reverb times with the 60000/BPM formula, a full note-value table, and practical examples for 90, 120, 128, 140, and 174 BPM.">
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/delay-times-from-bpm.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site-kit.css">
+<link rel="stylesheet" href="/assets/article.css">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://bpmfinder.ca/delay-times-from-bpm.html">
-<meta property="og:title" content="Delay Times from BPM — Convert Tempo to Milliseconds | BPMfinder.ca">
-<meta property="og:description" content="Convert BPM to delay times in milliseconds: quarter, eighth, sixteenth, dotted, and triplet note lengths for producers.">
+<meta property="og:title" content="Delay Times from BPM: Note-Value Chart &amp; Formula | BPMfinder.ca">
+<meta property="og:description" content="Convert BPM to delay and reverb times with the 60000/BPM formula, a full note-value table, and practical examples for 90, 120, 128, 140, and 174 BPM.">
 <meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
+<meta name="twitter:title" content="Delay Times from BPM: Note-Value Chart &amp; Formula | BPMfinder.ca">
+<meta name="twitter:description" content="Convert BPM to delay and reverb times with the 60000/BPM formula, a full note-value table, and practical examples for 90, 120, 128, 140, and 174 BPM.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta name="twitter:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
 <meta name="theme-color" content="#f6f5f2">
-<style>
-:root {
-  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
-  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
-  background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line);
-  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
-.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
-.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
-.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
-  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
-  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
-.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
-.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
-.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
-  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
-.grid2 { display: grid; gap: .9rem; }
-@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
-.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
-  border-radius: 10px; text-decoration: none; color: inherit; }
-.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
-.tile span { color: var(--muted); font-size: .92rem; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
-  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
-ul, ol { padding-left: 1.2rem; }
-table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
-table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
-table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
-</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bpmfinder.ca/#website", "url": "https://bpmfinder.ca/", "name": "BPMfinder.ca", "description": "Free browser BPM tool and original tempo guides.", "publisher": {"@id": "https://bpmfinder.ca/#organization"}}, {"@type": "Organization", "@id": "https://bpmfinder.ca/#organization", "name": "BPMfinder.ca", "url": "https://bpmfinder.ca/", "email": "excavationstation@gmail.com", "founder": {"@type": "Person", "name": "Justin Helmer"}}, {"@type": "Article", "@id": "https://bpmfinder.ca/delay-times-from-bpm.html#article", "headline": "Delay times from BPM: the note-value chart", "description": "Convert BPM to delay and reverb times with the 60000/BPM formula, a full note-value table, and practical examples for 90, 120, 128, 140, and 174 BPM.", "url": "https://bpmfinder.ca/delay-times-from-bpm.html", "mainEntityOfPage": {"@id": "https://bpmfinder.ca/delay-times-from-bpm.html#webpage"}, "author": {"@type": "Person", "name": "Justin Helmer", "url": "https://excavationpro.ca/"}, "publisher": {"@id": "https://bpmfinder.ca/#organization"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "image": "https://bpmfinder.ca/assets/og-home.jpg"}, {"@type": "WebPage", "@id": "https://bpmfinder.ca/delay-times-from-bpm.html#webpage", "url": "https://bpmfinder.ca/delay-times-from-bpm.html", "name": "Delay times from BPM: the note-value chart", "description": "Convert BPM to delay and reverb times with the 60000/BPM formula, a full note-value table, and practical examples for 90, 120, 128, 140, and 174 BPM.", "isPartOf": {"@id": "https://bpmfinder.ca/#website"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the formula for delay time?", "acceptedAnswer": {"@type": "Answer", "text": "60,000 divided by BPM gives one beat in milliseconds. Divide or multiply for the note value."}}, {"@type": "Question", "name": "What is a dotted eighth delay?", "acceptedAnswer": {"@type": "Answer", "text": "An eighth note multiplied by 1.5. At 120 BPM the eighth is 250 ms, so the dotted eighth is 375 ms."}}, {"@type": "Question", "name": "Should delay be synced to the grid?", "acceptedAnswer": {"@type": "Answer", "text": "For stable electronic music, usually yes; for live or drifting material, set it by ear."}}, {"@type": "Question", "name": "Why does my delay sound out of time?", "acceptedAnswer": {"@type": "Answer", "text": "Check the project tempo, straight vs dotted value, and any tempo change in the track."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bpmfinder.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bpmfinder.ca/guides.html"}, {"@type": "ListItem", "position": 3, "name": "Delay times from BPM: the note-value chart", "item": "https://bpmfinder.ca/delay-times-from-bpm.html"}]}]}</script>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">BPMfinder.ca</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html">Guides</a> <a href="/how-to-find-bpm.html">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
+
 <div class="wrap">
-
-  <section class="hero">
-    <h1>Delay times from BPM — note lengths producers use</h1>
-    <p class="lead">Convert tempo into milliseconds for delays, reverbs, and sidechain feel.</p>
-    <div class="cta-row"><a class="btn primary" href="/app.html">Get BPM first</a></div>
-  </section>
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<section class="hero">
+  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / Delay times from BPM: the note-value chart</p>
+  <h1>Delay times from BPM: the note-value chart</h1>
+  <p class="lead">Every tempo-synced delay is a division of the beat. Once you know the BPM, the milliseconds are arithmetic &mdash; and the arithmetic is the difference between a delay that sits in the groove and one that smears it.</p>
+  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="2026-10-20">Updated 2026-10-20</time> &middot; 7 min read &middot; <span class="tag">delay</span><span class="tag">reverb</span><span class="tag">mixing</span></p>
+  <div class="cta-row">
+    <a class="btn primary" href="/app.html">Open free BPM tool</a>
+    <a class="btn" href="/guides.html">All guides</a>
   </div>
+</section>
+<main>
 
-  <main>
-    <article class="card">
-      <h2>The basic formula</h2>
-      <p>One beat in milliseconds ≈ <strong>60000 ÷ BPM</strong>.</p>
-      <p>Example: 120 BPM → 60000 ÷ 120 = <strong>500 ms</strong> per quarter note.</p>
-      <table class="simple">
-        <thead><tr><th>Note</th><th>Multiplier</th><th>At 120 BPM</th></tr></thead>
-        <tbody>
-          <tr><td>1/4</td><td>1 × beat</td><td>500 ms</td></tr>
-          <tr><td>1/8</td><td>0.5 × beat</td><td>250 ms</td></tr>
-          <tr><td>1/16</td><td>0.25 × beat</td><td>125 ms</td></tr>
-          <tr><td>Dotted 1/8</td><td>0.75 × beat</td><td>375 ms</td></tr>
-          <tr><td>Triplet 1/8</td><td>1/3 × beat</td><td>~167 ms</td></tr>
-        </tbody>
-      </table>
-      <h2>How to use this with BPMfinder</h2>
-      <ol>
-        <li>Detect BPM on <a href="/app.html">app.html</a>.</li>
-        <li>Compute 60000 ÷ BPM for the quarter-note length.</li>
-        <li>Multiply for the note value you want.</li>
-        <li>Enter that value into your delay plugin.</li>
-      </ol>
-      <p>
-        Some tools show delay tables automatically. The math stays the same whether you calculate by hand or use a helper.
-      </p>
-      <h2>Musical warning</h2>
-      <p>
-        Perfect grid delays can sound robotic on human performances. Use tempo-synced values as a starting point, then
-        nudge by ear. Production is still listening first.
-      </p>
-    </article>
-  </main>
+<article class="card">
+  <h2>The basic formula</h2>
+  <p>One beat in milliseconds is <strong>60,000 &divide; BPM</strong>. At 120 BPM, one beat is 500 ms. A quarter-note delay is 500 ms; an eighth-note delay is 250 ms; a sixteenth-note delay is 125 ms. A dotted eighth is 1.5 times the eighth (375 ms at 120), and a triplet is two-thirds of the straight value.</p>
+  <p>This is the same math a DAW uses when you set a delay to &ldquo;1/8 dotted&rdquo; and change the project tempo. Doing it by hand is useful when you are working outside a DAW, matching a hardware pedal, or checking why a plugin&rsquo;s sync feels wrong.</p>
+  <h2>Note values at common tempos</h2>
+  <div class="table-wrap"><table class="simple">
+    <thead><tr><th>BPM</th><th>Quarter</th><th>Eighth</th><th>Dotted 8th</th><th>16th</th><th>Triplet 8th</th></tr></thead>
+    <tbody>
+<tr><td>60</td><td>1000</td><td>500</td><td>750</td><td>250</td><td>333</td></tr>
+<tr><td>70</td><td>857</td><td>429</td><td>643</td><td>214</td><td>286</td></tr>
+<tr><td>80</td><td>750</td><td>375</td><td>562</td><td>188</td><td>250</td></tr>
+<tr><td>90</td><td>667</td><td>333</td><td>500</td><td>167</td><td>222</td></tr>
+<tr><td>100</td><td>600</td><td>300</td><td>450</td><td>150</td><td>200</td></tr>
+<tr><td>110</td><td>545</td><td>273</td><td>409</td><td>136</td><td>182</td></tr>
+<tr><td>120</td><td>500</td><td>250</td><td>375</td><td>125</td><td>167</td></tr>
+<tr><td>128</td><td>469</td><td>234</td><td>352</td><td>117</td><td>156</td></tr>
+<tr><td>140</td><td>429</td><td>214</td><td>321</td><td>107</td><td>143</td></tr>
+<tr><td>150</td><td>400</td><td>200</td><td>300</td><td>100</td><td>133</td></tr>
+<tr><td>160</td><td>375</td><td>188</td><td>281</td><td>94</td><td>125</td></tr>
+<tr><td>174</td><td>345</td><td>172</td><td>259</td><td>86</td><td>115</td></tr>
+<tr><td>180</td><td>333</td><td>167</td><td>250</td><td>83</td><td>111</td></tr>
+    </tbody>
+  </table></div>
+  <p>All values are milliseconds, rounded to the nearest millisecond. Use the table as a starting point, then fine-tune by ear; a few milliseconds can change the feel of a rhythmic delay.</p>
+  <p>If you do not want to do the arithmetic, the <a href="/app.html">BPM tool</a> shows delay times for the tempo it detects, including the note values above. The table is still useful when you are working from a known BPM without a file.</p>
+  <p><strong>Musical warning:</strong> a mathematically correct delay can still be wrong for the arrangement. A delay that lands exactly on the grid may fight a swing feel, and a delay that is slightly late may sit better than a perfect eighth. The formula gives you the target; your ears decide whether to use it.</p>
+</article>
+<div class="ad-slot" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<article class="card">
+  <h2>Worked examples</h2>
+  <p><strong>120 BPM:</strong> quarter 500 ms, eighth 250 ms, dotted eighth 375 ms, sixteenth 125 ms. A 250 ms ping-pong delay sits on the eighth note; a 375 ms delay pushes against the beat in that familiar dotted-eighth way.</p>
+  <p><strong>128 BPM:</strong> quarter 469 ms, eighth 234 ms, dotted eighth 352 ms, sixteenth 117 ms. This is the house tempo where a 3/16 delay often feels bigger than a straight eighth.</p>
+  <p><strong>140 BPM:</strong> quarter 429 ms, eighth 214 ms, dotted eighth 321 ms, sixteenth 107 ms. At this tempo, short delays start to sound like doubling rather than echo; filter them if the mix gets crowded.</p>
+  <p><strong>174 BPM:</strong> quarter 345 ms, eighth 172 ms, dotted eighth 259 ms, sixteenth 86 ms. Drum-and-bass delays often work best at the eighth or dotted eighth, with the feedback low enough to avoid clutter.</p>
+  <h2>Ping-pong, dotted eighth, and pre-delay</h2>
+  <p>A ping-pong delay alternates left and right. It widens a mono source without making it louder, which is why it is common on vocals and plucks. The timing is still the note value; the stereo pattern is a separate choice.</p>
+  <p>Reverb pre-delay is not the same as a delay, but the math helps. A short pre-delay (20&ndash;60 ms) keeps a vocal from sounding glued to the reverb. A tempo-synced pre-delay can be useful on percussive material, but it is usually better to set it by feel.</p>
+  <h2>Tempo-synced vs manual</h2>
+  <p>If the DAW session has a stable tempo, use tempo sync. If the track drifts, if you are working with live drums, or if you want a delay that deliberately ignores the grid, set the time manually. Manual delays are also useful when a plugin&rsquo;s sync implementation rounds in a way you do not like.</p>
+  <h2>Common mistakes</h2>
+  <ul>
+    <li>Using a quarter-note delay on a busy arrangement; it fights the vocal.</li>
+    <li>Setting feedback too high, so the delay outlasts the phrase.</li>
+    <li>Forgetting to high-pass the delay return; low-end repeats muddy the kick.</li>
+    <li>Assuming every genre wants a dotted eighth; sometimes a straight eighth is cleaner.</li>
+    <li>Changing the project tempo after printing a delay without re-checking the time.</li>
+  </ul>
+</article>
+<article class="card faq">
+  <h2>FAQ</h2>
+  <h3>What is the formula for delay time?</h3>
+  <p>60,000 divided by BPM gives one beat in milliseconds. Divide or multiply for the note value you want.</p>
+  <h3>What is a dotted eighth delay?</h3>
+  <p>An eighth note multiplied by 1.5. At 120 BPM, the eighth is 250 ms, so the dotted eighth is 375 ms.</p>
+  <h3>Should delay be synced to the grid?</h3>
+  <p>For electronic music with a stable tempo, usually yes. For live or drifting material, set it by ear.</p>
+  <h3>Why does my delay sound out of time?</h3>
+  <p>Check whether the plugin is using the project tempo, whether the note value is straight or dotted, and whether the track has a tempo change.</p>
+</article>
+<article class="card">
+  <h2>Delay or reverb: which one do you need?</h2>
+  <p>A delay repeats the signal; a reverb simulates a space. If you want a rhythmic answer to a vocal line, use a delay. If you want the source to sit in a room, use a reverb. The note-value table is for the delay; reverb uses time in a different way, although pre-delay can be tempo-aware.</p>
+  <p>A common combination is a short room reverb for glue and a tempo-synced delay for movement. Put the reverb first in the chain and the delay after it, then high-pass the delay return so the low end does not turn into mud. If the mix already has a lot of sustain, a shorter delay with low feedback will be more useful than a long wash.</p>
+  <h2>A workflow for dialing a delay</h2>
+  <ol>
+    <li>Set the note value from the table (start with the eighth or dotted eighth).</li>
+    <li>Set feedback low &mdash; one or two repeats is enough for most vocals.</li>
+    <li>High-pass the return around 300&ndash;500 Hz so it does not crowd the kick.</li>
+    <li>Automate the send rather than the return; let the delay appear only where the arrangement has space.</li>
+    <li>Check the mix in mono; a wide ping-pong can disappear or dominate when summed.</li>
+  </ol>
+  <p>If the delay feels late, shorten it by a few milliseconds rather than changing the note value. If it feels cluttered, reduce feedback before reducing the level; the repeats are usually the problem, not the first echo.</p>
+</article>
+<div class="related"><h2>Related guides</h2><ul><li><a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a></li><li><a href="/bpm-for-djs.html">BPM for DJs</a></li><li><a href="/tap-tempo-guide.html">Tap tempo guide</a></li></ul></div>
+<div class="author-box">
+  <strong>Justin Helmer</strong> publishes BPMfinder.ca and records as
+  <a href="https://excavationpro.ca/">Excavationpro</a>. He writes about tempo, music tools, and the
+  practical side of making records without a label. <a href="/about.html">About the site</a>.
+</div>
 
+</main>
 </div>
 <footer class="site">
   <div class="wrap">
@@ -137,10 +165,17 @@ table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-s
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
-    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
+    <p>&copy; 2026 Justin Helmer &middot; BPMfinder.ca &mdash; free educational BPM guides and a free private browser tempo tool.
     Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
   </div>
 </footer>
-
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js"></script>
 </body>
 </html>

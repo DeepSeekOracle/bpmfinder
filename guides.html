@@ -1,114 +1,103 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cookie-key="bpmfinder_cookies">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BPM Guides — Tempo Detection Tutorials | BPMfinder.ca</title>
-<meta name="description" content="Free original BPM guides: how to find song tempo, tap tempo, DJ beatmatching, and delay times from BPM.">
+<title>BPM Guides: Tempo, Tap Tempo, DJ Workflow & Delay | BPMfinder.ca</title>
+<meta name="description" content="Original BPM guides for producers, DJs, dancers, and runners: find tempo, check half-time, tap tempo, plan a set, and calculate delay times.">
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/guides.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site-kit.css">
+<link rel="stylesheet" href="/assets/article.css">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://bpmfinder.ca/guides.html">
-<meta property="og:title" content="BPM Guides — Tempo Detection Tutorials | BPMfinder.ca">
-<meta property="og:description" content="Free original BPM guides: how to find song tempo, tap tempo, DJ beatmatching, and delay times from BPM.">
+<meta property="og:title" content="BPM Guides: Tempo, Tap Tempo, DJ Workflow &amp; Delay | BPMfinder.ca">
+<meta property="og:description" content="Original BPM guides for producers, DJs, dancers, and runners: find tempo, check half-time, tap tempo, plan a set, and calculate delay times.">
 <meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
+<meta name="twitter:title" content="BPM Guides: Tempo, Tap Tempo, DJ Workflow &amp; Delay | BPMfinder.ca">
+<meta name="twitter:description" content="Original BPM guides for producers, DJs, dancers, and runners: find tempo, check half-time, tap tempo, plan a set, and calculate delay times.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta name="twitter:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
 <meta name="theme-color" content="#f6f5f2">
-<style>
-:root {
-  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
-  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
-  background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line);
-  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
-.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
-.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
-.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
-  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
-  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
-.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
-.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
-.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
-  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
-.grid2 { display: grid; gap: .9rem; }
-@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
-.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
-  border-radius: 10px; text-decoration: none; color: inherit; }
-.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
-.tile span { color: var(--muted); font-size: .92rem; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
-  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
-ul, ol { padding-left: 1.2rem; }
-table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
-table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
-table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
-</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bpmfinder.ca/#website", "url": "https://bpmfinder.ca/", "name": "BPMfinder.ca", "description": "Free browser BPM tool and original tempo guides.", "publisher": {"@id": "https://bpmfinder.ca/#organization"}}, {"@type": "Organization", "@id": "https://bpmfinder.ca/#organization", "name": "BPMfinder.ca", "url": "https://bpmfinder.ca/", "email": "excavationstation@gmail.com", "founder": {"@type": "Person", "name": "Justin Helmer"}}, {"@type": "CollectionPage", "@id": "https://bpmfinder.ca/guides.html#page", "url": "https://bpmfinder.ca/guides.html", "name": "BPM guides for real sessions", "description": "Original BPM guides for producers, DJs, dancers, and runners: find tempo, check half-time, tap tempo, plan a set, and calculate delay times.", "isPartOf": {"@id": "https://bpmfinder.ca/#website"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bpmfinder.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bpmfinder.ca/guides.html"}, {"@type": "ListItem", "position": 3, "name": "BPM guides for real sessions", "item": "https://bpmfinder.ca/guides.html"}]}]}</script>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">BPMfinder.ca</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html" aria-current="page">Guides</a> <a href="/how-to-find-bpm.html">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
+
 <div class="wrap">
-
-  <section class="hero">
-    <h1>BPM guides for real sessions</h1>
-    <p class="lead">Original educational articles on tempo detection, DJ workflow, tap tempo, and delay timing. Written for humans who actually make or play music.</p>
-    <div class="cta-row"><a class="btn primary" href="/app.html">Open free BPM tool</a></div>
-  </section>
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<section class="hero">
+  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / BPM guides for real sessions</p>
+  <h1>BPM guides for real sessions</h1>
+  <p class="lead">Original educational articles on tempo detection, DJ workflow, tap tempo, delay timing, and the counting choices that make a BPM number useful.</p>
+  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="2026-10-20">Updated 2026-10-20</time> &middot; 4 min read &middot; <span class="tag">guides</span></p>
+  <div class="cta-row">
+    <a class="btn primary" href="/app.html">Open free BPM tool</a>
+    <a class="btn" href="/guides.html">All guides</a>
   </div>
+</section>
+<main>
 
-  <main>
-    <article class="card">
-      <h2>Start here</h2>
-      <div class="grid2">
-        <a class="tile" href="/how-to-find-bpm.html"><strong>How to find BPM</strong><span>Complete beginner-to-studio workflow.</span></a>
-        <a class="tile" href="/tap-tempo-guide.html"><strong>Tap tempo guide</strong><span>Manual tempo when algorithms disagree.</span></a>
-        <a class="tile" href="/bpm-for-djs.html"><strong>BPM for DJs</strong><span>Beatmatching and set consistency.</span></a>
-        <a class="tile" href="/delay-times-from-bpm.html"><strong>Delay times from BPM</strong><span>Note values for delays and sidechain feel.</span></a>
-      </div>
-    </article>
-    <article class="card">
-      <h2>What these guides are for</h2>
-      <p>
-        Many “BPM finder” pages are thin tool shells with almost no explanation. BPMfinder.ca pairs a free detector
-        with original writing so you understand <em>why</em> a number appeared, when to ignore it, and how to use tempo
-        in practice. That combination — useful tool + real educational content — is intentional.
-      </p>
-    </article>
-  </main>
+<article class="card">
+  <h2>Start with the job in front of you</h2>
+  <p>Most people arrive here with one of four questions: how do I find the BPM of a song, why does the number look wrong, how do I use BPM in a DJ set, or how do I turn a tempo into a delay time? The guides below are organised around those jobs rather than around keywords.</p>
+  <p>If you are new, read <a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a> first. It gives you the workflow the other guides assume: choose a clean section, read the confidence, check half-time, and confirm with tap tempo. If you already have a number and want to use it, go straight to the DJ, delay, or running guide.</p>
+</article>
+<article class="card">
+  <h2>All guides</h2>
+  <div class="grid2">
+    <a class="tile" href="/how-to-find-bpm.html"><strong>How to find a song&rsquo;s BPM</strong><span>The complete workflow: section choice, confidence, half/double, tap tempo, and recording the result.</span></a>
+    <a class="tile" href="/bpm-for-djs.html"><strong>BPM for DJs</strong><span>Pitch-fader math, phrasing, set energy, tempo ranges, and a 20-minute practice drill.</span></a>
+    <a class="tile" href="/delay-times-from-bpm.html"><strong>Delay times from BPM</strong><span>The 60,000/BPM formula, a full note-value table, and practical examples at common tempos.</span></a>
+    <a class="tile" href="/tap-tempo-guide.html"><strong>Tap tempo guide</strong><span>How to tap eight bars accurately and when to trust your ears over the detector.</span></a>
+    <a class="tile" href="/half-time-double-time.html"><strong>Half-time and double-time</strong><span>Why 70 and 140 can describe the same groove, and how to choose the count you need.</span></a>
+    <a class="tile" href="/bpm-for-running.html"><strong>BPM for running</strong><span>Match music to running cadence and build a warm-up-to-cooldown playlist.</span></a>
+    <a class="tile" href="/bpm-detection-accuracy.html"><strong>How accurate is BPM detection?</strong><span>Our measured test: 21 generated click tracks, including noise and offbeat variants.</span></a>
+  </div>
+</article>
+<article class="card">
+  <h2>How these guides are made</h2>
+  <p>Each guide is written to answer a real session question, not to fill a page. Where a claim can be measured, we measure it: the accuracy page reports the actual returned tempos, including the failures. Where a number is a convention rather than a rule &mdash; genre tempo ranges, for example &mdash; we say so.</p>
+  <p>The free <a href="/app.html">browser BPM tool</a> is the companion to these guides. It analyzes audio locally in your browser; the <a href="/privacy.html">privacy policy</a> explains what is and is not uploaded.</p>
+  <p>Have a question the guides do not answer? <a href="/contact.html">Contact us</a> and say which page you were reading.</p>
+</article>
+<article class="card">
+  <h2>Choose a path</h2>
+  <p><strong>If you are new to tempo:</strong> start with How to find a song&rsquo;s BPM, then read Half-time and double-time. Those two pages cover the mistakes that make every other number confusing.</p>
+  <p><strong>If you are preparing a DJ set:</strong> read BPM for DJs, then Delay times from BPM. The first gives you the planning math; the second gives you the mix math.</p>
+  <p><strong>If you are producing:</strong> read Delay times from BPM and the accuracy test. One shows how tempo becomes a time value; the other shows where the detector can mislead you.</p>
+  <p><strong>If you are running:</strong> go straight to BPM for running and build the arc before you build the playlist.</p>
+  <p>Every guide links back to the free <a href="/app.html">browser tool</a>, so you can test the idea on a real file instead of reading about it. If a page raises a question that is not answered, the <a href="/contact.html">contact page</a> is the fastest way to get it added.</p>
+</article>
 
+</main>
 </div>
 <footer class="site">
   <div class="wrap">
@@ -124,10 +113,17 @@ table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-s
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
-    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
+    <p>&copy; 2026 Justin Helmer &middot; BPMfinder.ca &mdash; free educational BPM guides and a free private browser tempo tool.
     Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
   </div>
 </footer>
-
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js"></script>
 </body>
 </html>

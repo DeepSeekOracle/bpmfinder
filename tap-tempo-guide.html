@@ -1,122 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-cookie-key="bpmfinder_cookies">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tap Tempo Guide — Manual BPM When Detectors Disagree | BPMfinder.ca</title>
-<meta name="description" content="Learn accurate tap tempo technique for DJs and producers when automatic BPM detection fails or feels wrong.">
+<title>Tap Tempo Guide: Accurate BPM by Hand | BPMfinder.ca</title>
+<meta name="description" content="How to tap tempo accurately in eight-bar phrases, average out drift, and know when to trust your ears instead of an automatic BPM detector.">
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/tap-tempo-guide.html">
+<link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=IBM+Plex+Mono:wght@400&family=Syne:wght@500;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site-kit.css">
+<link rel="stylesheet" href="/assets/article.css">
 <meta name="google-adsense-account" content="ca-pub-0646320966060599">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0646320966060599" crossorigin="anonymous"></script>
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:url" content="https://bpmfinder.ca/tap-tempo-guide.html">
-<meta property="og:title" content="Tap Tempo Guide — Manual BPM When Detectors Disagree | BPMfinder.ca">
-<meta property="og:description" content="Learn accurate tap tempo technique for DJs and producers when automatic BPM detection fails or feels wrong.">
+<meta property="og:title" content="Tap Tempo Guide: Accurate BPM by Hand | BPMfinder.ca">
+<meta property="og:description" content="How to tap tempo accurately in eight-bar phrases, average out drift, and know when to trust your ears instead of an automatic BPM detector.">
 <meta property="og:site_name" content="BPMfinder.ca">
-<meta name="twitter:card" content="summary">
+<meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
+<meta name="twitter:title" content="Tap Tempo Guide: Accurate BPM by Hand | BPMfinder.ca">
+<meta name="twitter:description" content="How to tap tempo accurately in eight-bar phrases, average out drift, and know when to trust your ears instead of an automatic BPM detector.">
+<meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
+<meta name="twitter:image:alt" content="BPMfinder.ca — free BPM tool and tempo guides">
 <meta name="theme-color" content="#f6f5f2">
-<style>
-:root {
-  --bg: #f6f5f2; --card: #fff; --ink: #1a1a1a; --muted: #555;
-  --line: #e2ddd4; --accent: #0b6e4f; --accent2: #16324f; --link: #0a5c8a;
-}
-* { box-sizing: border-box; }
-body { margin: 0; font-family: Georgia, "Times New Roman", serif; color: var(--ink);
-  background: var(--bg); line-height: 1.7; font-size: 18px; }
-a { color: var(--link); }
-.wrap { max-width: 780px; margin: 0 auto; padding: 0 1.2rem; }
-header.site { background: var(--card); border-bottom: 1px solid var(--line);
-  padding: .9rem 0; position: sticky; top: 0; z-index: 30; }
-.nav { display: flex; flex-wrap: wrap; gap: .7rem 1rem; align-items: center; justify-content: space-between; }
-.brand { font-family: system-ui,sans-serif; font-weight: 800; color: var(--accent2); text-decoration: none; letter-spacing: .02em; }
-.navlinks { display: flex; flex-wrap: wrap; gap: .55rem .9rem; font-family: system-ui,sans-serif; font-size: .88rem; }
-.navlinks a { text-decoration: none; color: var(--muted); }
-.navlinks a:hover, .navlinks a[aria-current="page"] { color: var(--accent); font-weight: 600; }
-.hero { padding: 2rem 0 1rem; }
-.hero h1 { font-size: clamp(1.65rem, 4vw, 2.25rem); line-height: 1.25; margin: 0 0 .7rem; color: var(--accent2); }
-.lead { color: var(--muted); font-size: 1.08rem; margin: 0 0 1.1rem; }
-.cta-row { display: flex; flex-wrap: wrap; gap: .6rem; font-family: system-ui,sans-serif; }
-.btn { display: inline-block; padding: .68rem 1.05rem; border-radius: 8px; text-decoration: none !important;
-  font-weight: 700; font-size: .9rem; border: 1px solid var(--line); background: var(--card); color: var(--accent2); }
-.btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
-.notice { margin: 1.1rem 0 0; padding: .85rem 1rem; background: #eef6f2; border: 1px solid #c5e0d4;
-  border-radius: 10px; font-family: system-ui,sans-serif; font-size: .9rem; }
-.card { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 1.35rem 1.25rem; margin: 1.1rem 0; }
-.card h2 { margin: 0 0 .45rem; font-size: 1.28rem; color: var(--accent2); }
-.card h3 { margin: 1rem 0 .3rem; font-size: 1.05rem; }
-.meta { font-family: system-ui,sans-serif; font-size: .8rem; color: var(--muted); margin-bottom: .55rem; }
-.ad-slot { margin: 1.1rem 0; min-height: 90px; padding: 8px; background: var(--card);
-  border: 1px dashed var(--line); border-radius: 8px; text-align: center; }
-.ad-label { font-family: system-ui,sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: .08em; color: #999; margin-bottom: 6px; }
-.grid2 { display: grid; gap: .9rem; }
-@media (min-width: 700px) { .grid2 { grid-template-columns: 1fr 1fr; } }
-.tile { display: block; padding: 1rem; background: var(--card); border: 1px solid var(--line);
-  border-radius: 10px; text-decoration: none; color: inherit; }
-.tile strong { display: block; color: var(--accent2); margin-bottom: .25rem; font-family: system-ui,sans-serif; }
-.tile span { color: var(--muted); font-size: .92rem; }
-footer.site { border-top: 1px solid var(--line); padding: 1.4rem 0 2.5rem; margin-top: 1.5rem;
-  font-family: system-ui,sans-serif; font-size: .86rem; color: var(--muted); }
-footer.site nav { display: flex; flex-wrap: wrap; gap: .45rem 1rem; margin-bottom: .6rem; }
-ul, ol { padding-left: 1.2rem; }
-table.simple { width: 100%; border-collapse: collapse; font-size: .95rem; }
-table.simple th, table.simple td { border: 1px solid var(--line); padding: .45rem .55rem; text-align: left; }
-table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-size: .85rem; }
-</style>
-
+<script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "WebSite", "@id": "https://bpmfinder.ca/#website", "url": "https://bpmfinder.ca/", "name": "BPMfinder.ca", "description": "Free browser BPM tool and original tempo guides.", "publisher": {"@id": "https://bpmfinder.ca/#organization"}}, {"@type": "Organization", "@id": "https://bpmfinder.ca/#organization", "name": "BPMfinder.ca", "url": "https://bpmfinder.ca/", "email": "excavationstation@gmail.com", "founder": {"@type": "Person", "name": "Justin Helmer"}}, {"@type": "Article", "@id": "https://bpmfinder.ca/tap-tempo-guide.html#article", "headline": "Tap tempo guide: when automatic detection fails", "description": "How to tap tempo accurately in eight-bar phrases, average out drift, and know when to trust your ears instead of an automatic BPM detector.", "url": "https://bpmfinder.ca/tap-tempo-guide.html", "mainEntityOfPage": {"@id": "https://bpmfinder.ca/tap-tempo-guide.html#webpage"}, "author": {"@type": "Person", "name": "Justin Helmer", "url": "https://excavationpro.ca/"}, "publisher": {"@id": "https://bpmfinder.ca/#organization"}, "datePublished": "2026-10-20", "dateModified": "2026-10-20", "image": "https://bpmfinder.ca/assets/og-home.jpg"}, {"@type": "WebPage", "@id": "https://bpmfinder.ca/tap-tempo-guide.html#webpage", "url": "https://bpmfinder.ca/tap-tempo-guide.html", "name": "Tap tempo guide: when automatic detection fails", "description": "How to tap tempo accurately in eight-bar phrases, average out drift, and know when to trust your ears instead of an automatic BPM detector.", "isPartOf": {"@id": "https://bpmfinder.ca/#website"}}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How many taps do I need?", "acceptedAnswer": {"@type": "Answer", "text": "At least eight bars. More taps average out small timing errors, but too long invites drift."}}, {"@type": "Question", "name": "Why is my tap tempo different from the detector?", "acceptedAnswer": {"@type": "Answer", "text": "You may be tapping a different counting level, or the detector locked onto a subdivision."}}, {"@type": "Question", "name": "Does tap tempo work on live recordings?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, but treat the result as a range if the tempo breathes."}}, {"@type": "Question", "name": "Can I tap with a keyboard?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Consistency matters more than the surface."}}]}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bpmfinder.ca/"}, {"@type": "ListItem", "position": 2, "name": "Guides", "item": "https://bpmfinder.ca/guides.html"}, {"@type": "ListItem", "position": 3, "name": "Tap tempo guide: when automatic detection fails", "item": "https://bpmfinder.ca/tap-tempo-guide.html"}]}]}</script>
 </head>
 <body>
 <header class="site">
   <div class="wrap nav">
     <a class="brand" href="/">BPMfinder.ca</a>
     <nav class="navlinks" aria-label="Primary">
-      <a href="/">Home</a> <a href="/app.html">BPM tool</a> <a href="/guides.html">Guides</a> <a href="/how-to-find-bpm.html">How to find BPM</a> <a href="/about.html">About</a> <a href="/contact.html">Contact</a> <a href="/privacy.html">Privacy</a>
+      <a href="/">Home</a>
+      <a href="/app.html">BPM tool</a>
+      <a href="/guides.html" aria-current="page">Guides</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/privacy.html">Privacy</a>
     </nav>
   </div>
 </header>
+
 <div class="wrap">
-
-  <section class="hero">
-    <h1>Tap tempo guide — when automatic BPM detection fails</h1>
-    <p class="lead">Your ears and hands are still the final authority. Here is how to tap tempo accurately.</p>
-    <div class="cta-row"><a class="btn primary" href="/app.html">Open tool with tap tempo</a></div>
-  </section>
-  <div class="ad-slot" aria-label="Advertisement">
-    <div class="ad-label">Advertisement</div>
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+<section class="hero">
+  <p class="breadcrumb"><a href="/">Home</a> / <a href="/guides.html">Guides</a> / Tap tempo guide: when automatic detection fails</p>
+  <h1>Tap tempo guide: when automatic detection fails</h1>
+  <p class="lead">Tap tempo is the oldest tempo detector in the room: a human, a steady pulse, and a stopwatch. It is still the best second opinion when an algorithm is not sure.</p>
+  <p class="article-meta">Guide &middot; Justin Helmer &middot; <time datetime="2026-10-20">Updated 2026-10-20</time> &middot; 6 min read &middot; <span class="tag">tap tempo</span><span class="tag">workflow</span><span class="tag">live music</span></p>
+  <div class="cta-row">
+    <a class="btn primary" href="/app.html">Open free BPM tool</a>
+    <a class="btn" href="/guides.html">All guides</a>
   </div>
+</section>
+<main>
 
-  <main>
-    <article class="card">
-      <h2>Why tap tempo still matters</h2>
-      <p>
-        Algorithms excel on four-on-the-floor kicks. They struggle with rubato classical, spoken word, sparse ambient,
-        or tracks that change tempo mid-song. Tap tempo is the honest backup: you define the pulse you will perform to.
-      </p>
-      <h2>How to tap well</h2>
-      <ol>
-        <li>Play the track at a comfortable volume.</li>
-        <li>Find a repeating accent (kick, snare, or clap).</li>
-        <li>Tap on each accent for at least 8–16 hits.</li>
-        <li>Ignore one-off fills; return to the main grid.</li>
-        <li>If you rush, restart — averages include your mistakes.</li>
-      </ol>
-      <h2>Counting tips</h2>
-      <p>
-        Count “1-and-2-and” for eighth notes if quarters feel too slow. For trap, decide whether you are counting the
-        half-time head-nod or the double-time hi-hat grid. Write which convention you used next to the BPM.
-      </p>
-      <h2>Practice exercise</h2>
-      <p>
-        Take three songs you know. Tap each twice. Compare your results to the free detector on
-        <a href="/app.html">app.html</a>. When they match within 1–2 BPM, your internal clock is studio-ready.
-      </p>
-    </article>
-  </main>
+<article class="card">
+  <h2>Why tap tempo still matters</h2>
+  <p>Automatic detection is fast, but it can lock onto a subdivision, a shaker, or a kick pattern that is not the pulse you would clap to. Tap tempo gives you a direct comparison between the machine&rsquo;s number and your body&rsquo;s sense of the beat. When they agree, you can move on. When they do not, the disagreement is the information.</p>
+  <p>Tap tempo also works on material that is hard to analyze: a live drum performance, a rubato piano intro, a phone recording, or a track with a long spoken-word section. You do not need a clean file or a stable grid &mdash; you need a pulse you can feel.</p>
+  <h2>How to tap well</h2>
+  <ol>
+    <li><strong>Start on a downbeat.</strong> Wait for a clear bar start, then tap the pulse you would count as 1, 2, 3, 4.</li>
+    <li><strong>Tap eight bars.</strong> Two bars is not enough to average out a nervous finger; eight bars gives you a stable sample.</li>
+    <li><strong>Use a consistent surface.</strong> A keyboard key, a mouse button, or the screen is fine &mdash; just keep it the same for the whole pass.</li>
+    <li><strong>Do not tap the hi-hat.</strong> Tap the pulse that the drums and bass agree on.</li>
+    <li><strong>Compare, then repeat.</strong> If the result is far from the detector, tap again on a different section.</li>
+  </ol>
+  <h2>What to do when taps drift</h2>
+  <p>Drift is normal. A few milliseconds of variation is human; the average is what matters. If your taps are consistently speeding up or slowing down, you are probably following a phrase rather than a pulse. Reset and start again on a clear downbeat.</p>
+  <p>If the track has a ritardando or a live drummer who pushes and pulls, a single tap-tempo number is only an average. Note the range instead: &ldquo;about 92&ndash;96 BPM, slower at the end.&rdquo; That is more useful than a false precision.</p>
+</article>
+<div class="ad-slot" aria-label="Advertisement">
+  <div class="ad-label">Advertisement</div>
+  <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-0646320966060599" data-ad-format="auto" data-full-width-responsive="true"></ins>
+  <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+</div>
+<article class="card">
+  <h2>When automatic detection fails</h2>
+  <p>Use tap tempo when the detector gives you a low-confidence result, when the track has no clear kick, when the intro is ambient, or when the reported BPM is exactly half or double what you feel. Those are not failures of the tool; they are cases where the human ear has better information.</p>
+  <p>Our <a href="/bpm-detection-accuracy.html">accuracy test</a> found that the detector handles steady electronic pulses very well, but can return half-time or double-time at the extremes. Tap tempo is the fastest way to catch that.</p>
+  <h2>Counting tips</h2>
+  <p>Count out loud in a low voice, or mouth the numbers. Counting under your breath tends to collapse into the subdivision. Start on a downbeat and keep the numbers even; if you speed up the count, you are following the music rather than measuring it.</p>
+  <p>If the track is in 3/4 or 6/8, tap the felt pulse rather than forcing four. A waltz counted in four will give you a number that no drummer in the room recognizes.</p>
+  <h2>A practice drill</h2>
+  <ol>
+    <li>Play a track you know well.</li>
+    <li>Tap eight bars without looking at the BPM readout.</li>
+    <li>Write down your number.</li>
+    <li>Run the automatic detector on the same section.</li>
+    <li>Compare. If they differ, decide which count the snare supports.</li>
+  </ol>
+  <p>Do this five times with different genres. You will start to hear the difference between a detector error and a counting choice.</p>
+</article>
+<article class="card faq">
+  <h2>FAQ</h2>
+  <h3>How many taps do I need?</h3>
+  <p>At least eight bars. More taps average out small timing errors, but tapping for too long invites drift.</p>
+  <h3>Why is my tap tempo different from the detector?</h3>
+  <p>You may be tapping a different counting level (half or double), or the detector may have locked onto a subdivision. Check the snare and backbeat.</p>
+  <h3>Does tap tempo work on live recordings?</h3>
+  <p>Yes, but treat the result as a range if the tempo breathes. A single number is only meaningful for a stable pulse.</p>
+  <h3>Can I tap with a keyboard?</h3>
+  <p>Yes. The spacebar or a mouse button works; consistency matters more than the surface.</p>
+</article>
+<article class="card">
+  <h2>Tap tempo in a DAW vs a phone</h2>
+  <p>In a DAW, tap tempo usually sets the session tempo directly. That is convenient, but it can overwrite a tempo map you already built. If the project has tempo changes, tap into a separate tempo lane or note the value first, then decide where it belongs.</p>
+  <p>On a phone, the risk is latency. Bluetooth audio adds delay between the sound you hear and the moment you tap. If you must tap over Bluetooth, do not trust the absolute number; use the taps to compare two sections, or switch to wired headphones for the check.</p>
+  <h2>Common tapping mistakes</h2>
+  <ul>
+    <li><strong>Tapping the subdivision instead of the pulse.</strong> If you tap every hi-hat, you will get double or quadruple the tempo.</li>
+    <li><strong>Starting mid-phrase.</strong> A tap sequence that begins on beat 3 will average against the wrong grid.</li>
+    <li><strong>Tapping too briefly.</strong> Four taps is a guess; eight bars is a sample.</li>
+    <li><strong>Watching the readout.</strong> Looking at the number can make you correct toward it. Tap first, then look.</li>
+  </ul>
+  <p>The best tap-tempo check is boring: same surface, same count, eight bars, then compare. If the number is unstable, the performance is unstable, not necessarily the tool.</p>
+</article>
+<article class="card">
+  <h2>What tap tempo cannot fix</h2>
+  <p>Tap tempo gives you an average pulse. It cannot tell you which section of a changing track is the &ldquo;real&rdquo; tempo, and it cannot separate a drummer&rsquo;s expressive push from a drift in the recording. If the tempo moves, write down a range and the section it belongs to.</p>
+  <p>It also cannot rescue a file that is too short or too noisy to hear clearly. In those cases, the useful move is to find a cleaner section, not to tap harder. The tool and the hand are both estimates; the arrangement is the ground truth.</p>
+</article>
+<div class="related"><h2>Related guides</h2><ul><li><a href="/how-to-find-bpm.html">How to find a song&rsquo;s BPM</a></li><li><a href="/half-time-double-time.html">Half-time and double-time</a></li><li><a href="/bpm-for-djs.html">BPM for DJs</a></li></ul></div>
+<div class="author-box">
+  <strong>Justin Helmer</strong> publishes BPMfinder.ca and records as
+  <a href="https://excavationpro.ca/">Excavationpro</a>. He writes about tempo, music tools, and the
+  practical side of making records without a label. <a href="/about.html">About the site</a>.
+</div>
 
+</main>
 </div>
 <footer class="site">
   <div class="wrap">
@@ -132,10 +155,17 @@ table.simple th { background: #f0eee8; font-family: system-ui,sans-serif; font-s
       <a href="/privacy.html">Privacy</a>
       <a href="/terms.html">Terms</a>
     </nav>
-    <p>© 2026 Justin Helmer · BPMfinder.ca — free educational BPM guides and a free private browser tempo tool.
+    <p>&copy; 2026 Justin Helmer &middot; BPMfinder.ca &mdash; free educational BPM guides and a free private browser tempo tool.
     Contact: <a href="mailto:excavationstation@gmail.com">excavationstation@gmail.com</a></p>
   </div>
 </footer>
-
+<div class="cookie-banner" id="cookieBanner" role="dialog" aria-label="Cookie consent">
+  <div>Ads may use cookies after you accept. <a href="/privacy.html">Privacy</a></div>
+  <div>
+    <button type="button" class="ok" id="cookieOk">Accept</button>
+    <button type="button" class="no" id="cookieNo">Decline</button>
+  </div>
+</div>
+<script src="/assets/site-kit.js"></script>
 </body>
 </html>

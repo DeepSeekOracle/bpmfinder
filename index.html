@@ -7,8 +7,8 @@
 
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Free BPM Finder Guide — How to Detect Song Tempo Online | BPMfinder.ca</title>
-<meta name="description" content="Learn how free online BPM detection works, how to check song tempo privately in your browser, and open the free BPMfinder tool. Guides for DJs, producers, and dancers by Justin Helmer.">
+<title>Free BPM Finder — Song Tempo in Your Browser | BPMfinder.ca</title>
+<meta name="description" content="Find a song’s BPM privately in your browser. Original guides for DJs, producers, dancers, and runners, plus a free tempo tool. No account or upload.">
 <meta name="author" content="Justin Helmer">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <link rel="canonical" href="https://bpmfinder.ca/">
@@ -23,17 +23,33 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://bpmfinder.ca/">
 <meta property="og:title" content="BPMfinder.ca — free tempo in the browser">
-<meta property="og:description" content="Detect song BPM privately on your device. Guides for DJs, producers, and dancers. No account.">
+<meta property="og:description" content="Detect song BPM privately on your device. Guides for DJs, producers, dancers, and runners. No account.">
 <meta property="og:image" content="https://bpmfinder.ca/assets/og-home.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@Excavationpro">
+<meta name="twitter:creator" content="@Excavationpro">
 <meta name="twitter:title" content="BPMfinder.ca — free tempo in the browser">
 <meta name="twitter:description" content="MP3, WAV, FLAC. Analyzed on your device. No account.">
 <meta name="twitter:image" content="https://bpmfinder.ca/assets/og-home.jpg">
-<meta property="og:image:alt" content="bpmfinder.ca">
+<meta property="og:image:alt" content="bpmfinder.ca — free browser BPM tool and tempo guides">
+<meta name="theme-color" content="#0a100e">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+{"@type":"WebSite","@id":"https://bpmfinder.ca/#website","url":"https://bpmfinder.ca/","name":"BPMfinder.ca","description":"Free browser BPM tool and original tempo guides.","publisher":{"@id":"https://bpmfinder.ca/#organization"}},
+{"@type":"Organization","@id":"https://bpmfinder.ca/#organization","name":"BPMfinder.ca","url":"https://bpmfinder.ca/","email":"excavationstation@gmail.com","founder":{"@type":"Person","name":"Justin Helmer"}},
+{"@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"Is BPMfinder free?","acceptedAnswer":{"@type":"Answer","text":"Yes. The browser BPM tool and the guide library are free, with no account required."}},
+{"@type":"Question","name":"Does the tool upload my audio?","acceptedAnswer":{"@type":"Answer","text":"No. The tempo analysis runs in your browser; the file is not uploaded for detection."}},
+{"@type":"Question","name":"What formats work?","acceptedAnswer":{"@type":"Answer","text":"MP3, WAV, and FLAC in current browsers. If a file will not decode, export a short 16-bit WAV clip."}},
+{"@type":"Question","name":"Why does the BPM look half or double?","acceptedAnswer":{"@type":"Answer","text":"The detector may be counting a different level of the same pulse. Check where the snare and backbeat land, then choose the count you need."}},
+{"@type":"Question","name":"Can I use this for a DJ set?","acceptedAnswer":{"@type":"Answer","text":"Yes. Use the tempo for beatmatching and planning, and check the half-time or double-time count before you set the pitch fader."}},
+{"@type":"Question","name":"Who publishes BPMfinder.ca?","acceptedAnswer":{"@type":"Answer","text":"Justin Helmer publishes BPMfinder.ca as part of the Excavationpro / LYGO workshop."}}
+]}
+]}
+</script>
 </head>
 <body class="home">
 <div id="lygoLoad" class="lygo-load">Loading</div>
@@ -46,6 +62,7 @@
     <a href="/about.html">About</a>
   </nav>
 </header>
+
 <section class="hero">
   <div class="hero-inner">
     <p class="kicker">Justin Helmer · free · private in the browser</p>
@@ -59,6 +76,7 @@
     <p class="notice">Audio is analyzed on your device. No account required. The interactive detector is at <a href="/app.html">/app.html</a>.</p>
   </div>
 </section>
+
 <main class="sheet">
 <article>
   <h2>How free browser BPM detection works</h2>
@@ -72,35 +90,72 @@
     <li>Confirm with tap tempo for eight bars.</li>
   </ol>
 </article>
+
 <div class="ad-slot lygo-tv-wrap" aria-label="LYGO TV">
   <div data-lygo-tv></div>
 </div>
 
 <article>
-  <h2>When half-time and double-time matter</h2>
-  <p>Hip-hop and trap often sit near 70–90 or 140–180 depending on how you count. Drum-and-bass lives near 170–180 but can feel like half when you only track the kick. Pick one counting style and stick to it. Consistency across tracks is more useful than arguing metric theory. See the <a href="/bpm-for-djs.html">BPM for DJs guide</a>.</p>
+  <h2>What the number can and cannot tell you</h2>
+  <p>A BPM value tells you how fast the grid moves. It does not tell you how the track feels, whether the snare is on two and four, or whether the artist counts the groove at half speed. A 70 BPM trap record and a 140 BPM house record can share a pulse; the difference is where the backbeat lands and how the subdivisions are played.</p>
+  <p>That is why the tool returns a confidence score as well as a number. A high score means the detector found a consistent pulse, not that it read your mind. Treat the score as a reason to double-check, not as a grade. Our <a href="/bpm-detection-accuracy.html">measured accuracy test</a> shows exactly where the detector is strong and where it chooses a different counting level.</p>
 </article>
+
+<article>
+  <h2>When half-time and double-time matter</h2>
+  <p>Hip-hop and trap often sit near 70–90 or 140–180 depending on how you count. Drum-and-bass lives near 170–180 but can feel like half when you only track the kick. Pick one counting style and stick to it. Consistency across tracks is more useful than arguing metric theory. See the <a href="/bpm-for-djs.html">BPM for DJs guide</a> for the pitch-fader math, and the <a href="/half-time-double-time.html">half-time guide</a> for the counting tests.</p>
+</article>
+
 <article>
   <h2>Privacy: your audio can stay on your device</h2>
-  <p>BPMfinder’s tool page analyzes files in the browser. That is a better default for unreleased music than “upload for processing” sites that store files. Cookies and advertising are explained on the <a href="/privacy.html">Privacy policy</a>.</p>
+  <p>BPMfinder’s tool page analyzes files in the browser. That is a better default for unreleased music than “upload for processing” sites that store files. Cookies and advertising are explained on the <a href="/privacy.html">Privacy policy</a>. If you want a free catalog to practice on, the player at <a href="https://asiancoastline.com/">asiancoastline.com</a> streams the Excavationpro music without an account.</p>
 </article>
+
+<article>
+  <h2>Who it is for</h2>
+  <div class="grid">
+    <div class="mini"><strong>DJs</strong><br>Check tempo before a blend, plan a set arc, and catch half-time records before the pitch fader does.</div>
+    <div class="mini"><strong>Producers</strong><br>Set a project grid, convert BPM to delay times, and verify a sample without opening a DAW.</div>
+    <div class="mini"><strong>Dancers &amp; runners</strong><br>Match a playlist to a pulse, build a warm-up arc, and avoid the half-time playlist mistake.</div>
+    <div class="mini"><strong>Students</strong><br>Learn why a detector disagrees with your count, and how to settle it with tap tempo.</div>
+  </div>
+</article>
+
+<article>
+  <h2>How to check a result in five minutes</h2>
+  <p>A BPM number is only useful if you can defend it. The check is short: pick a clean section, run the detector, compare the count with the snare, and confirm with tap tempo. If the four steps agree, write the number down. If they do not, the disagreement tells you which count to investigate.</p>
+  <ol>
+    <li>Choose 20–40 seconds with a steady kick or snare.</li>
+    <li>Drop the file into the <a href="/app.html">tool</a> and read BPM plus confidence.</li>
+    <li>Ask where the snare lands: on the slow count, or against a double-time surface?</li>
+    <li>Tap eight bars and compare the average with the detector.</li>
+  </ol>
+  <p>Most errors are counting errors, not arithmetic errors. A track that reads 140 when you feel 70 is not necessarily a bad detection; it may be the same pulse counted at a different level. The <a href="/how-to-find-bpm.html">step-by-step guide</a> shows the full workflow, and the <a href="/bpm-detection-accuracy.html">accuracy test</a> shows where the detector can choose a half or double on its own.</p>
+</article>
+
 <article>
   <h2>Guides</h2>
   <ul>
-    <li><a href="/how-to-find-bpm.html">How to find a song’s BPM</a></li>
-    <li><a href="/tap-tempo-guide.html">Tap tempo guide</a></li>
-    <li><a href="/bpm-for-djs.html">BPM for DJs</a></li>
-    <li><a href="/delay-times-from-bpm.html">Delay times from BPM</a></li>
+    <li><a href="/how-to-find-bpm.html">How to find a song’s BPM</a> — the complete workflow from section choice to recording the result.</li>
+    <li><a href="/tap-tempo-guide.html">Tap tempo guide</a> — manual tempo when algorithms disagree.</li>
+    <li><a href="/bpm-for-djs.html">BPM for DJs</a> — beatmatching, phrasing, and set energy.</li>
+    <li><a href="/delay-times-from-bpm.html">Delay times from BPM</a> — the note-value table and the formula behind it.</li>
+    <li><a href="/half-time-double-time.html">Half-time and double-time</a> — why 70 and 140 can be the same groove.</li>
+    <li><a href="/bpm-for-running.html">BPM for running</a> — cadence, playlist arcs, and interval blocks.</li>
+    <li><a href="/bpm-detection-accuracy.html">Detection accuracy</a> — our measured test, including the failures.</li>
   </ul>
 </article>
+
 <article>
   <h2>FAQ</h2>
   <h3>Is BPMfinder free?</h3><p>Yes. Guides and the tool are free.</p>
   <h3>Do I need an account?</h3><p>No.</p>
   <h3>What formats work?</h3><p>MP3, WAV, and FLAC in modern browsers. If one fails, convert a short clip to WAV.</p>
+  <h3>Why does the BPM look half or double?</h3><p>The detector may be counting a different level of the same pulse. Check the snare and the main backbeat, then choose the count you need.</p>
   <h3>Who runs this site?</h3><p>Justin Helmer. See <a href="/about.html">About</a> and <a href="/contact.html">Contact</a>.</p>
 </article>
 </main>
+
 <footer class="site">
   <p class="family">
     <a href="https://eternalhaven.ca/">eternalhaven.ca</a>
@@ -108,7 +163,6 @@
     <a href="https://deepseekoracle.com/">deepseekoracle.com</a>
     <a href="https://chatagent.ca/">chatagent.ca</a>
     <a href="https://asiancoastline.com/">asiancoastline.com</a>
-    <a href="https://bpmfinder.ca/">bpmfinder.ca</a>
   </p>
   <p>© <span class="y"></span> Justin Helmer. bpmfinder.ca</p>
 </footer>
@@ -125,7 +179,7 @@
     <button type="button" class="no" id="cookieNo">Decline</button>
   </div>
 </div>
-<script src="/assets/lygo-tv-ninja.js?v=5" defer></script>
+<script src="/assets/lygo-tv-ninja.js?v=6" defer></script>
 <script src="/assets/site-kit.js" defer></script>
 
 </body>
